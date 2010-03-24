@@ -1,0 +1,1 @@
+* See [Hydra Stack: Getting Started](http://docs.google.com/View?id=ddrmhvjh_181gj9b7rcv) and [Hydrangea on Github](http://github.com/mediashelf/hydrangea)

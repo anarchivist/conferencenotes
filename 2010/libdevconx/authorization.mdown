@@ -2,3 +2,5 @@
 	* replaces XACML-based "legacy" security layer - Fedora-specific AuthN piece
 	* comes from Muradora-based whatnot: 
 	* need for hierarchical policy application - collection driven
+	* experimental in Fedora 3.3
+	* but muradora relies on dbxml; perhaps overengineered
