@@ -1,0 +1,28 @@
+* Categories
+	* work-do
+	* messaging/queues
+	* robot gem
+	* atomic pieces of workflow
+	* internal/external
+	* integration w/ external tools ("legacy")
+	* end-to-end digitization workflow
+
+* Stanford
+	* PID created at beginning of process no matter of process
+	* Need to assert facts about object to see what remains to be done (possibly using Solr)
+	* Work-do is an actual datastream implementation - simple XML
+	* Milestone lifecycle - completion based 
+	* Requires polling of datastreams - that is role of robots
+	* Queues defined by queries
+
+* messaging - bill parod
+	* needed by expensive processes
+	* embedding logic separately from applications that need data
+	* xml-rpc for drupal integration
+	* using camel - http://camel.apache.org/
+
+* atomic pieces of workflow
+	* validation
+	* transfer
+	* bagging
+	* shelver?

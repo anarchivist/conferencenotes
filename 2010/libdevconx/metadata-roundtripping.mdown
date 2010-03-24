@@ -1,0 +1,43 @@
+* Example cases
+	* Creating EAD from Archivists' Toolkit, ingest into Fedora; then modifying objects - how do we get data back to AT?
+	* Editing MODS data streams using multiple systems
+	* UPEI: Need to create "universal MODS editor"
+
+* Problems
+	* Unidirectional - can't retrieve or reimport
+	* Letting people edit data that's already there - legacy objects or otherwise
+	* Batch operations
+	* "Draft versions" - relating to workflow
+		* canonical metadata vs. current metadata
+	* "Substantiality" of changes (Richard) - typos vs. major structural changes
+	
+
+* Solutions
+	* Add APIs to tools like AT
+	* Implementing an ingester (difficult)
+	* Store code to generate form from skeleton
+		* Build your own form - developers and endusers
+	* XForms
+	* Linked Data/RDF solution (e.g. Declan Fleming's approach)
+		* Serializing from RDF to whatever - e.g. MODS
+		* Storing as RDF/XML and then adding disseminators to extract serializations
+	* Opinionated XML (eg. mods4ruby)
+		* Parsing using libxml2
+		* convenience methods that describe data model
+		* or xpaths to shove data in as needed (somewhat similar to XForms)
+	* Queries/modifications on sets retrieved from resource index?
+	* Alex: simplified custom interfaces
+	* Storing MODS, e.g and transforming and RDF representation
+		* using appropriate translations between ontologies and MOS elements
+	* Find sane ways of storing multiple varying versions/representations of data and sync without crosswalk
+		* "Localizing damage potential"
+	
+* Action items
+	* Track how Hydrangea creates user interface items for corollaries in Islandora (Alex/Matt)
+	* Figure out how arbitrary templates handle arbitrarily complex XML in ActiveFedora
+    * Document opinionated and Linked Data option (Matt)
+	* UI for editing raw XML - cf. WYSIWYG "Edit as HTML" UIs
+	* Opinion XML call when ready for release (Matt)
+	* Look into impact of canonicalization in EAD (Mark)
+	* Feed back to AT/Archon merger team about needs for update API
+	
