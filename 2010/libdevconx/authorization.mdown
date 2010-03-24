@@ -32,6 +32,7 @@
 * Action items
 	* SALT - example implementation of Phase 1 (pub/private gated discovery - see Bess/Alex's document); we need reference implementation of Phase 2 (gated discovery based on users and groups)
 	* Abstract rightsMetadata into XACML
+		* See [Hydra rightsMetadata on FC Confluence](http://www.fedora-commons.org/confluence/display/hydra/Hydra+rights+metadata)
 	* Triggering reindex if policy changes?
 	* Posting messages for policy changes - propagation issue
 		* indiv. object-level policies vs policies by reference
