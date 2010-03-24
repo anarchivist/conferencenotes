@@ -4,3 +4,27 @@
 	* need for hierarchical policy application - collection driven
 	* experimental in Fedora 3.3
 	* but muradora relies on dbxml; perhaps overengineered
+	* JAAS based; flatfile/ldap options
+
+* FeSL round 2
+	* [Call for FeSL2 contributors](https://mailman.stanford.edu/mailman/private/libdevconx/2010-March/000020.html)
+	* api/ui for managing policies - development is interdependence
+	* committing resources for future development - fesl1 financial contribution model not ideal
+	* best way to contact if interested is talking to both eddie shin and mark leggott
+	* estimate: $60,000/~408 hours, most of which working on interface side to ensure roundtripping
+
+* Gated discovery
+	* See [Bess's notes from discussions with UPEI on Hydra/Islandora](https://mailman.stanford.edu/mailman/private/libdevconx/2010-March/000021.html)
+
+* (how) should users be represented in repository?
+	* need for policies that represent owner of object
+	* Eddie: should we have a disseminator?
+
+* implementation specific issues?
+	* in solr? cf. drupal apachesolr/nodeaccess stuff
+	* in resource index?
+
+* This is urgent, so what are we doing?
+	* potential stopgap OR long-term solution - indexing rightsMetadata
+	* security needs to be managed at index level, application level and repo level
+	* separation of access and discovery rights
