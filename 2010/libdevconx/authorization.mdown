@@ -24,7 +24,16 @@
 	* in solr? cf. drupal apachesolr/nodeaccess stuff
 	* in resource index?
 
-* This is urgent, so what are we doing?
+* This is urgent, so what are we thinking?
 	* potential stopgap OR long-term solution - indexing rightsMetadata
 	* security needs to be managed at index level, application level and repo level
 	* separation of access and discovery rights
+
+* Action items
+	* SALT - example implementation of Phase 1 (pub/private gated discovery - see Bess/Alex's document); we need reference implementation of Phase 2 (gated discovery based on users and groups)
+	* Abstract rightsMetadata into XACML
+	* Triggering reindex if policy changes?
+	* Posting messages for policy changes - propagation issue
+		* indiv. object-level policies vs policies by reference
+		* implications of moving to policy datastream vs reference to objects
+	* Dovetailing with FeSL2 development plans
