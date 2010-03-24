@@ -1,0 +1,18 @@
+* Valerie Hotchkiss
+** 70k uncataloged books purchased over 50 years or so
+** less than $12 per volume to catalog at UIUC as opposed to $15-53 for most rare books
+** "quick & clean cataloging"
+** enhancement of minimal records in oclc
+
+* Dan Santamaria
+** Inexpensive and relatively non-labor intensive once procedures are in place 
+** Starting MARC because it already existed and easy to convert
+** standards + structure data are essential, and arch desc needs to get more data centric
+** description is iterative
+** using SVN
+** can be manipulated in multiple way
+
+* Merrilee
+** Worldcat Local spec colltask force
+** "Missing materials" prototype for stolen/etc. materials
+ 

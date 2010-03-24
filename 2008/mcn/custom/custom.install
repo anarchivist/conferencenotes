@@ -1,0 +1,52 @@
+<?php
+
+function custom_schema() {
+  $schema['amazon_asin'] = array(
+    'fields' => array(
+      'nid' => array(
+      'type' => 'int',
+      'not null' => TRUE,
+      ),
+      'vid' => array(
+        'type' => 'int',
+        'not null' => TRUE,
+      ),
+      'asin' => array(
+        'type' => 'varchar',
+        'length' => '100',
+        'not null' => TRUE,
+      )
+    ),
+    'primary key' => array('vid'),
+  );
+
+  $schema['amazon_import'] = array(
+    'fields' => array(
+      'asin' => array('type' => 'varchar', 'length' => '100', 'not null' => TRUE),
+      'title' => array('type' => 'varchar', 'length' => '100', 'not null' => TRUE),
+      'isbn' => array('type' => 'varchar', 'length' => '100', 'not null' => TRUE),
+      'publication_date' => array('type' => 'int', 'not null' => TRUE, 'disp-width' => '11'),
+      'price' => array('type' => 'int', 'not null' => TRUE),
+      'publisher' => array('type' => 'varchar', 'length' => '100', 'not null' => TRUE),
+      'detail_url' => array('type' => 'varchar', 'length' => '255', 'not null' => TRUE),
+    ),
+    'primary key' => array('asin'),
+  );
+
+  $schema['amazon_import_images'] = array(
+    'fields' => array(
+      'asin' => array('type' => 'varchar', 'length' => '100', 'not null' => TRUE),
+      'size' => array('type' => 'varchar', 'length' => '20', 'not null' => TRUE),
+      'url' => array('type' => 'varchar', 'length' => '255', 'not null' => TRUE),
+      'height' => array('type' => 'int', 'not null' => TRUE),
+      'width' => array('type' => 'int', 'not null' => TRUE),
+    ),
+    'primary key' => array('asin', 'size'),
+  );
+
+  return $schema;
+}
+
+function custom_install() {
+  drupal_install_schema('custom');
+}

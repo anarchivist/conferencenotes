@@ -1,0 +1,11 @@
+* Metadata editing, a truly extensible solution: Trident
+** http://tridentproject.org/
+** http://library.duke.edu/trac/dc/wiki/Trident
+** multiple collections in repository
+** controlled vocabs + validation
+** some collections/items have their own "flavor"
+** application profile:
+*** instructs editor how to build ui for editing
+*** schema neutral representation of metadata
+*** editor is generic and has no notion of  underlying  metadata schemas
+** editor: python/django/grids css/jquery

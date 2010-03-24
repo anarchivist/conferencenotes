@@ -1,0 +1,4 @@
+* FeSL overview
+	* replaces XACML-based "legacy" security layer - Fedora-specific AuthN piece
+	* comes from Muradora-based whatnot: 
+	* need for hierarchical policy application - collection driven

@@ -1,0 +1,22 @@
+* Cathy Marshall
+** webpage "weighs 80 mg"
+** Gordon Bell lifestreams
+** John Seabrook article in NYTimes from 1995
+** born digital assets circa 1995
+** personal digital arching after 20-25 yrs of "Feral ethnography"
+** people rely on benign negect as a defacto stewardship technique & collection policy
+** personal digital archiving is not the same as archiving a personal digital colection
+** evolving notion of backups
+** "neglect can be an artifact's best friend" - tansell
+** accumulation - people don't throw things out as much when they're digital
+** storage is getting increasingly cheaper
+** hard to determine future worth
+** easier to keep than cull
+** scholarly archives: PDF of pubs. and  bib resources after 20 yrs
+** use based heuristics hel assess value
+** "oscar madison approach" (shove evrything into a big DB/store in the cloud and decode later) vs. "felix unger approach (safe storage, self describing digital objects)
+** data safety is a side effect
+** it's not the stuff, it's the catalog
+** forget about digital originals or reference copies
+** local copy as archivalcopy
+** where are tools that will let me harvest metadata and gathering copies rather than searching them

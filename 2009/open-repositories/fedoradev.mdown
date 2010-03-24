@@ -1,0 +1,13 @@
+* chris wilper
+* aaron [?]
+* bill brannon
+* andrew woods
+* gert petterson
+* kai [?] FIZ karlsruhe
+* eddie shin
+
+process for contributing code:
+
+* send to fedora-users or fedora-developers, or directly into tracker
+* open-state assign,ent process
+* see http://fedora-commons.org/confluence/display/FCREPO/Welcome

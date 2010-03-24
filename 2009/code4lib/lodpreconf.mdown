@@ -1,0 +1,72 @@
+* rdf/authority date
+    * authority data
+        * reuse within library applications (dspace, archivists toolkit)
+        * augmenting library data
+        * sharing library data
+    * barriers to integration
+        * MARC
+        * lack of webservices for library authorities
+        * publicity
+        * even library developed opensource projects...
+    * psycinfo + gale full text
+        * metadata in DC
+        * doi as link point 
+    * bib dat
+        * more granular data reuse
+        * true frbrization rather than workset algorithms
+        * library data more available to others
+    * application profiles & DCAM
+        * linked data graph theoretically infinite
+            * dcam defines bounded sets w/out relying soely on RDF syntax & semantics
+        * dcam/dsp instantiates records for purpose of packaging and reuse
+* libris.kb.se
+    * swedish national union catalog
+    * 6 million bib records
+    * linked data since 2008
+    * skos:Concepts were linked to lcsh.info
+    * ontologies
+        * dc
+        * skos
+        * foaf
+        * bibliontology
+        * geo
+        * libris
+* using/reusing vocabularies
+    * mindswap.org/2002/rdfconvert
+    * vocab slection dependson
+        * type of assertions you want to express
+        * type of inferences you want to make
+        * practical matters like client support & community acceptance 
+    * define your own terms / reusing
+    * reuse terms from well-known vocabs
+    * sindice
+    * extend whenever possible
+        * broader/narrower
+* openvocab
+    * persistent/open way to create terms
+* registries
+    * http://metadataregistry.org/
+    * content negotiation
+    * permanent URIs
+    * maintain multiple data modes
+    * focus on linked data stability
+    * multi-user
+    * history tracking - fine grained references to previous versions
+    * versioning 
+    * API (supporting non-registry namespaces)
+    * multilingual
+* what chudley wants from linked data
+    * collection development - more than data for dat's sake
+    * crawling old shite?
+    * recall improves with explicit links of authority records
+    * start caching
+    * caching + sameAs
+    * lockss for metadata
+    * make every cache its own lined data source
+    * caching/proxying
+* drupal + semantic web
+    * rdf api native in d7
+    * evoc
+    * neologism - easy vocabulary publishing
+    
+    

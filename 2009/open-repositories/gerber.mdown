@@ -1,0 +1,45 @@
+LORE: A compound object authoring and publishing tool for literary scholars
+based on FRBR
+
+http://itee.uq.edu.au/~eresearch
+http://austlit.edu.au/
+
+* background: OAI-ORE & FRBR
+** ORE: using named graphs/resource maps
+** developed as part of Aus-e-lit project
+** AustLit - frbr modeled 
+* objective:  development of lightweight in-browser tooll to enable aust lit scholers to
+** collab author scholarly compound objects using a standardized format
+** attach metadata to objects to facilitate their discovery
+** publish objects in open-acces repos
+* implementation: Firefox extension
+** AJAX/web2/XUL
+** Sesame 2 data store
+*** Named graphs
+* features
+** ad resources to resource map from within browser
+** RDF/XML and graphical views
+** configurable domain ontology - relationships and metadata
+** load/save/edit resource maps
+** browse/search to discover resources
+* applications
+** research
+*** scholarly editions
+*** research trails
+*** lineage
+** teaching
+*** relating disparated resources around a common theme
+* limitations w/
+** noninformation resource
+** local object identifiers
+** non persistent URIS
+** generic visualizations
+* complexity of ontology - possible specialized antologies
+* current developments
+** graphical views - SMIL, Timeline, maps
+** more specific relationship ontologies
+** improving fedora support
+* future work
+** rule engine to infer additional relationships
+** ontology dicoery through metadata schema registry
+** attachment of CC/other licenses

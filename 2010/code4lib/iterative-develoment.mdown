@@ -1,0 +1,27 @@
+* iterative development done simply
+** problems: things change; IT black box
+** agile: empowerment/trust/feedback driven
+** scrum: particular methodology
+** sprint central to scrim
+** how will this work into (non-hydra) AIMS development?
+
+* agile at NCSU
+** big problems in small pieces
+** transparency
+** adaptability
+** loosely based on scrum - development cycles followed by release
+** JIT planning/documentations
+** collaboration w/ customers: xfunctional team w/ IT point person; developers participate
+** joint project ownership
+
+* tools
+** Project/sprint backlog: JIRA
+** Requirements: confluence + JIRA
+** Sprint planning: Google Docs + JIRA
+
+* challenges:
+** multiple small projects within a cycle - not traditional for agile
+** lack of documented requirements: user stories and when you need them
+** prioritization difficult for library staff - work at release level
+** testing: how/when to automate for small projects; no QA experts
+** simultaneously handle support/development

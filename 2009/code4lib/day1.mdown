@@ -1,0 +1,65 @@
+* information vs. information technology
+    * what vs. how
+    * transient vs. persistent
+    
+* libris 
+    * why linked data?
+    * new libris, dec 07
+    * design by considering larger context
+    * what can a catalog become?
+    * catalogs in web cntext
+        * need to be open
+        * need to be linkable
+        * need to provide links
+        * must be part of the network
+        * cannot be end in itself
+        * allow for hackability
+    * why apis suck
+        * context specific - differ from each other
+        * too much control in the hands f the producer
+        * not hackable enough
+        * not really woven into the web
+    * linked open data turns the web into an API
+* jangle
+    * dlf  ils-di api - best of breed approach
+    * proprietary apis
+    * atom syndication + rest = atompub
+    * wide adoption
+    * jangle applies common data model to library data
+    * resources
+    * items - specific representational
+    * actors -users of systems
+    * collections - aggregations
+    * two components - connectors + core
+    * connectors - 4 response types - service, feed, search, explain
+    * opensearch + cql
+    * collections associated with items
+    * currently compiling requirements for 1.1
+    * jangle adapters - convert output to other formats
+    * future
+    * begin experimenting with post, put + delete
+        * sword as template
+    * go beyond opac-based systems
+* lusql
+    * high performance and simpler than solr's DataImportHandler
+    * effective n small machines
+* restafarianism at the NLA
+    * why rest? (simple, lang neutral, not soap)
+    * technologies: a bit of everything
+    * overengineering
+        * mets profiles to do simple stuff
+    * extreme MVC
+    * project coordination
+* dashboard initiative
+    * unified visualization
+    * detail is bad in dashboards
+    * monitor crucial library systems
+    * current flow primary focus
+* sword
+    * swordapp.org
+    * how do you get stuff out 
+    * workspaces and collections
+    * http get service document uri
+    * sword version/mediation
+* djatoka
+    *

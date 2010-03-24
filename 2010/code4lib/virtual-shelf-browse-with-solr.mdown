@@ -1,0 +1,5 @@
+* browse in record view
+* users need to discern order
+* lexical sort on call numbers
+* cutter numbers
+* requires heavy normalization

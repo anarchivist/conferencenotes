@@ -1,0 +1,32 @@
+* museums - strategy in the online universe 
+** nicholas crofts: "digital assets and digital burdens"
+*** are museums truly interested in achieving universal access for their collections?
+** "museum employees fear work" - universal access requires dealing with large issues
+** JWA would like universal access - can't really do anything regarding fears of loss of control, because once things are online you can't control them
+** "nonprofit organizations owe it to the world to give stuff away"
+** as non-profits we subscribe to either AAM or ICOMM codes of ethics
+** erway/schaffner - shifting gears
+*** selection is already done
+*** perfect is the enemy of the possible
+*** mass digitization of museum collections possible and effective
+*** everything should have equal treatment
+*** part of our cultural heritage is being digitized - we are in danger of losing those which aren't popular
+*** JWA has online collecting projects
+*** SDMA - cricket cages/angolan pot lids - repetition of classes of objects?
+*** CMA - online collections are publications
+** nick poole - UK collections trust
+*** on-demand digitization?
+*** digitizing holdings of large institutions furthers possibility of losing unpopular materials
+*** enabling small institutions to digitize collections
+*** digitization for books wasn't cheap until we devised equipment to do it
+** ethical issues in museum technology use
+** digital preservation - mediating risks
+*** there's only so much we can do; redundancy helps
+** FLOSS - neil gunton
+*** museum community not ready by and large?
+** funding
+*** projects in next 5 years
+** economy
+*** good to great
+** web 2.0 - is it getting the best of us?
+*** bringing related stuff together (really web 3.0)

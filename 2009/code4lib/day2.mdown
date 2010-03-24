@@ -1,0 +1,117 @@
+* sebastian hammer
+    * model of giving software away to libraries
+    * the independent man
+* OLE project
+    * format/resource agnostic
+    * flexible/adaptable/community developed
+    * service-oriented architecture
+    * community-based software dev and governance
+    * raising lib systems to enterprise level - interop with identity mgmt/SSO, ERP, CRM, courseware
+    * NOT a discovery interface project
+    * business process management
+* blacklight
+    * strength is relevancy ranking
+    * permanent and restful urls
+    * specialized behavior for different formats
+    * using gsearch to update solr from fedora
+    * image specific behavior - lightbox
+* biblios.net
+    * open data
+    * using OAI and SRU
+* biblios .org
+    * using jquery to add plugins
+    * adding a network folder using couchdb
+* frbr
+    * weak v strong v complete
+    * like one whole, complete bibliographic universe
+    * same issue with trying to locate materials
+    * how do i know which one is which?
+    * weak: work -> manifestation
+        * xisbn
+        * librarything does it by hand
+        * frbr is more than just work-set algorithms
+    * open library - lessweak
+        * work embodied by manifestation
+    * strong frbrization
+        * work realized thru expr embodied in manifestation exemplified by item
+    * collocation by family of works and epressions
+    * patrick le boeuf - FRBR imagined
+    * group 1 - 2 - 3 is the important part
+    * frbr in rdf
+    * demand strong frbrization
+    * build linked data
+    * create the algorithms
+* complete faceting
+    * desired
+        * scalability 
+        * iterative updates
+        * decoupling from text search
+        * dox contain fields, facets contain tags
+        * all references are arrays -> fs dumps
+        * 2 strategies for updating tag files
+            * append on fly
+            * store as full dump 
+        * 2 strategies for resolving
+            * get them from file system
+            * load them into memory
+        * several index manipulators
+            * analyze payload
+            * write to private subindex
+            * attach additional info and pass the payload on
+        * facet manipulator 
+        * searching
+            * search private sub index or other private source
+            * add response to aggregator
+        * faceting node
+            * retrieve bit set from prev doc search node
+    * distributed setup
+        * search node searches subindexes
+        * pathological case: to merge to sets of results we need to get ALL facet information back
+    * persistent sorted tags
+        * index lookup
+        * localized range queries
+        * sort w/o warmup and memory overhead
+* solr
+    * performance - measure it!
+    * memory - control usage using omitNorms and omitTf (latter in solr1.4)
+    * query parsing - it depends
+        * massage in user interface
+        * or massage in query parser
+    * data import
+        * DIH
+        * Solr Cell
+        * CSV
+        * LuSQL
+        * APIs
+        * solr-ruby mapper
+    * request handlers
+        * leverage solrs configurability
+    * solr as an IR toolkit
+        * termvectorrequesthandler
+        * statscomponet
+        * luke
+    * localsolr
+    * faceting
+        * 1.4 is kicking ass
+        * multiselect
+    * the interface is the app
+    * solrjs
+    * solritas
+        * velocity templated response
+* freecite
+* squeezing more of the opac
+    * lots of great individual innovation
+        * easy for a library geek
+        * no reuse
+        * user interface extensions
+        * easy to reuse
+        * shares opac specific
+* freebase
+    * mql - json
+    * sorts are property of query, not datatype
+    * subqueries
+    * wildcards: "*":null will get you everything
+    * reflection - subquery gets inf o outof a type, you don't have all the fun info out of a related type
+        * reflection allows that pulling
+    * optional - it's ok if stuff doesn't get returned
+    

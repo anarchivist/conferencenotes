@@ -1,0 +1,41 @@
+* tasked with building data infrastructure to answer questions about collections that returned facts rather than documents
+* not just facts, but assertions of facts
+* large amounts of data, multiple sources
+** collections management systems, DAMS, bib records, text/labels, pubs, correspondence, word documents
+** presenting datasource as a unified whole
+** federated search would not really work
+* semweb: information network in the nodes are linked at the data level rather than at the presentation level
+* primary goals:
+** store unstructured content and harvest usable data
+** pull records and documents from multiple sources together into a single, queryable datastore
+* structured content: record has a standard format and logical structure
+* unstructured content: designed to be interpreted by humans
+* first look: semantic mediawiki
+** text annotations in a given record
+** stored in a db-backed triple store
+** but: no time to do annotation by hand
+* automated triple building
+** considered NLP but no time/money to dedicate i
+** using opencalais
+** assignment of subjects as instances of specific classes
+* combining multiple ontologies
+** combination of MARC, MediaBin, and TMS among others
+** using semantic XML for MARC - element names become classes, and individual elements become instances of those classes; attributes become properties; text is associated with a "text" field 
+** therefore using semantic XML as a representational layer but not a full transformation
+** D2RO for SQL databases - data  doesn't need to be imported. tables become classes; rows become  instances; relational keys become properties 
+** creation/use of a common ontology for all data - using CIDOC
+** using subclassing to class things within CIDOC
+*** marc record subclass of E31.Document; E35.Title =~ 245$a
+*** lazy inference: happens at query time
+** data is NEVER actually moved or translated
+* resource list:
+** d2rq
+** topbraid composer
+** protege
+** jena
+** sesame
+** mulgara
+** http://groups.google.com/group/semuse
+** http://semuse.org/
+** http://kovenjsmith.com/
+* calais will work with user provided vocabularies next year

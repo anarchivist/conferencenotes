@@ -1,0 +1,7 @@
+* data in the cloud 
+** primary representation is raw data
+** not talking about data from website or from catalog sites like data.gov
+** google fusion tables
+* patron discovery
+** how can we make patrons aware of them
+** how can we facilitate use of those resources

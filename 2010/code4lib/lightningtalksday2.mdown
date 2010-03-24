@@ -1,0 +1,22 @@
+* libx update (godmar back)
+** google chrome
+* virt shelf browse w/o solr/mysql (maccabee levine)
+* vivo (paul albert)
+* wolfwalk (jason casden)
+** iphone app/site to track user location and shows library sites, geocoded location data, etc
+* custom metasearch widgets (alex smith)
+** http://reference.sonoma.edu/xerxes_widget/widget/?id=50
+* node.js (gsf)
+* catalog autosuggest (jill sexton)
+** use of external index limits access to authority datas
+* emerald view (yitzchak schaffer)
+** php frontend for greenstone
+* kill the search button (statsbiblioteket.dk)
+** http://developer.statsbiblioteket.dk/kill/code4lib.html
+* you heard it here first (royt):
+** mike teets, tip house, rob koopman
+** leverage staf throughout organization
+** lodged in research, but aimed at bridng the gulf between research and prod
+** "impedance matching" between fast moving/new ideas and slower moving production processes
+* FITS: file information tool set
+** http://code.google.com/p/fits/

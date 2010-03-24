@@ -1,0 +1,11 @@
+* why vampires vs. werewolves
+** "my job is to develop new software"
+** "i get evaluated on doing cool stuff"
+** building dynamic trust relationships
+** innovation is risk, and you don't take risks w/ people you don't trust
+** testing is central
+** what about upgrades? using nagios to test after upgrade
+** "you can't RTFM if TFM doesn't exist"
+
+* puppet
+** automate builds, automate testing

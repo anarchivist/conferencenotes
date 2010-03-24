@@ -1,0 +1,26 @@
+Drupal and Remote Data
+
+* beta1.palantir.net : test site for workshop
+* interacting with data
+    * read operations
+        * view
+        * list
+        * search
+    * write operations
+        * create
+        * update
+        * delete
+* method 1: direct access
+    * for fast connections 
+    * http://www.artic.edu/aic/collections/
+        * personal collections are drupal nodes
+        * theme system, form API
+        * drupal as application framework
+* method 2: lazy bridge nodes
+    * transparent, but slightly more complicated
+* method 3: wipe/rebuild importing
+    * bulk import to SQL table in drupal, and then using views to query/display data
+    * samfoxschool.wustl.edu
+* hybrid approaches
+    * method 4: mass import
+    * method 5: lazy import

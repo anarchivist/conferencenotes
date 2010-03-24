@@ -1,0 +1,17 @@
+* adhoc testing is insecure
+* regession testing is important
+** local code + local mods to other code
+* refactoring
+* rcov: show which lines of code which aren't testing
+* automatable testing
+* selenium - ffx plugin:
+** changes to DOM make these tests brittle
+* additional testing: RSpec, Cucumber, Rails testing framework
+* types of testing:
+** unit testing: tests of functions
+** integration testing - tests between modules/classes
+** black box/functional/acceptance tests - from top down
+** start with bug fixes, then move forward
+** write highlevel tests that exercise system as whole
+* mocks
+** isolate calls to external system

@@ -1,0 +1,4 @@
+* Cloud4lib: jaf and treese
+** open "digital library" platform, but cross out the digitals
+** development happens institutionally - redundant work
+** cloud4lib enables libraries to truly and collaboratively build and use a common infrastructure

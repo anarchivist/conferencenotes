@@ -1,0 +1,24 @@
+SWORD quick introduction
+
+* use cases: deposit from a desktop or online tool
+* atompub profile
+** explored standards - webdav, several JSRs
+** benefits: supports many parameters and requirements inc file deposit, has growing support, well-used, has extension mechanism, good fit with web architecture
+** drawbacks/risks: too much of a retrofit? how to package multiple files
+** sword profile builds on atompub
+** provides set of extensions/constraints and enforcements for posting compoundresources, mediated deposit, and workflows
+** sword compliance does not preclude atompub compliance
+** sword atompub package support: using mime to describe resources
+*** inadequate for compound object types: zip, tar, METS, DIDL, etc.
+*** sword extension: acceptPackaging element
+** mediated deposit - deposit client user may not be owner of resource
+*** using x-on-behalf-of
+** sword app dev features: no-op (dry run), verbose output client/server identity, auto discovery, error documents, nested service description
+* process
+** HTTP request: GET service doc/POST atom doc or file to collection URI
+** HTTP response/atom doc returned
+** HTTP basic auth is required
+* sword 2 less of a hack of atompub and atom than earlier versions
+
+http://fedora.swordapp.org/sword-fedora/servicedocument
+

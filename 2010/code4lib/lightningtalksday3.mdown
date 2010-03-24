@@ -1,0 +1,39 @@
+* ocr w/ open source tools (jonathan brinley)
+** started w/ omnipage, but batch processing crashes it
+** used tesseract + ocropus
+** HocrConverter.py (by jbrinley) - uses reportlab
+** http://xplus3.net/2009/04/02/convert-hocr-to-pdf/#
+* vufind at wmich (birong ho)
+** solr date math for new items/availability
+* fedora disseminators & drupal (alxp)
+** content models
+*** extanding standard fedora content models
+*** pointers to custom display code and ingest rules
+** collection display
+*** themable elements
+*** inspired by greenstone - jquery tab driven display
+*** drupal only calls disseminator and uses openlayers 
+*** using drupal form API
+* please clean my data
+** need batch tools for business owners to DIY
+** transformation added to harvesting
+** regex step templates
+** velocity template variables used to setore each regex match
+** http://code.nla.gov.au
+* library a la carte (mbklein and kim g)
+** create library guides etc
+** reuse/copy/share
+** hosted version using heroku
+** http://alacarte.library.oregonstate.edu/
+* digital video made easier
+* groupfinder
+* EAD, photos, and cooliris
+** "trickle"
+** constraints: contentddm; finding aids will be interface to digitized collections
+** sustained program, not a project
+** possibilities spcoll tech services
+** contentdm -easy to get  students
+** tricked out contentdm
+* fedora and shibboleth
+** michael park + birkin
+** http://bitbucket.org/birkin/shibboleth-programmatic-login/

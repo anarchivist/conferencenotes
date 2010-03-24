@@ -1,0 +1,13 @@
+* d7 ux
+* new information architecture - contexts
+** content
+** structure 
+** appearance
+** people
+** configuration
+* new admin theme
+* edit in place
+* config admin console
+* multiple admin users
+* requirements: php 5.2/mysql 5.0 or postgres 8.3
+* mix and match public and private files

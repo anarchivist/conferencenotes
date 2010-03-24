@@ -1,0 +1,4 @@
+* jennifer bowen
+** XC: OSS/user centered 
+** UI/faceted + frbrized
+** metadata tools: automated processing of large batches of metadatas

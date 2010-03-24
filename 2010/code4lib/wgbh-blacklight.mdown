@@ -1,0 +1,23 @@
+* media archives
+** material since  1951 - rare in broadcasting world
+** how do you  describe this stuff?
+** blacklight app on top of fedora
+** pbcore 2.0 under development: http://tinyurl.com/c4l-pbcore
+** metadata apis for blacklight:
+*** rdf/xml
+*** oai-pmh
+*** unapi
+*** oembed
+*** uriplay
+** fedora dev
+*** wgbh was focused on atomistic CModels, but general wisdom was compound CModels
+*** quicktime RTSP streaming
+*** h.264 pseudo streaming using 302 redirects, but doesn't resolve rights issue
+**** structured mod_rewrite: http://gist.github.com/304883
+*** ODRL - front end enforces policies, limited backend security policies
+** media workflows problematic
+** upcoming projects
+*** boston local tv news archive
+*** american archive
+*** duracloud pilot
+*** rights mgmt/DAM

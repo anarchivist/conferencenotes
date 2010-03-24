@@ -1,0 +1,56 @@
+* big problem with managing data
+* people creating out individualized solutions
+* comparable to the collections management scene ~20 years ago
+
+* wynne phelan, museum of fine arts houston
+** IMLS national leadership grant art conservation database project
+** web app to address 3 collection areas - works on papers, paintings, and 3d objects
+** MFAH developed photography conservation database; SQL Server webapp developed in house w/ contractor
+*** 10K+ up to date entries
+*** Core functions: condition documentations, treatment, preventative 
+** Heritage Health Index (Heritage Preservation/IMLS)
+** IMLS Response: Connecting to Collections
+** ACD devised national advisory committee at suggestion of IMLS
+** Standards: CCO, CDWA, AAT
+** Current practice: text-based condition and treatment report format (Word/ MS Publisher)
+** Attempted to use TMS; conservation module in the version they used didn't work well - Boston Museum of Art and Brooklyn Museum could adapt their TMS installations however
+** CDS-D developed by object conservator at Williamsburg Foundation; still proprietary
+** Team made up of registrars, conservators, and IT staff
+** IT dept agreed to help develop and created a systems development life cycle
+** Business process analysis and throwaway prototyping
+** textual analysis of interviews combined into spreadsheet
+** document analysis of conservation reports and different report formats
+*** edge cases like decorative arts and "cross-specialty" conservation reports were most instructive
+** OO/UML driven approach
+** development of report-centric model and artobject-centric model; later seemed to  be better fit towards what the conservators actually needed
+
+* ziad alsukairy, harvard university art museums strauss conservation center
+** browser-based conservation database application
+** workflow process/service overviews
+*** images - annotation and reading metadata
+*** analytical documents (add/search/view)
+*** other tools (spell check etc)
+** a project serves as container for artworks; artworks have different types of connected with them (consultation, investigation, treatment); condition reports can be generated
+*** workflow - proposa, work in progress, complete; similar for treatment
+** system architecture
+*** integration with CMS
+*** independent function with business process
+*** presentation layer - images, js, xhtml, css, ajax
+*** application layer, java EE (itext, jspell, pdflextream, magiczoom)
+*** data layer - separate db for conservation system; integrated with TMS and digital repository [for images]
+*** data pulled directly from TMS modules (via AJAX)
+*** images are stored on a staging server by conservators; but are ultimately stored in repository
+*** image metadata viewable through interface 
+*** annotation view adds annotation based upon image coordinates and stored in DB
+*** full text searching of attached pdf
+
+* nancy ash, philadelphia museum of art
+** new version of tracker almost complete
+** eExpress web framework - not open source
+*** decided on eExpress because of greater flexiblity to administrators who are not programmers
+** originally replaced filemaker pro database
+** electronic data couldnt replace physical documentation
+** interfacing with TMS was essential
+** security is a primary concern
+** conservation reports (examination, treatment, loan, technical report); workflow processing (photograph log, in/out log, ...)
+** desktop application

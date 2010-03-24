@@ -1,0 +1,13 @@
+fedora technical update
+
+* web admin client
+* akubra storage abstraction
+* multiplexing
+* out-of-box derby support
+* run fedora at arbitrary paths
+* sWORD 1.3 integration
+* 25 bugs fixed
+* themes
+** semantic web
+** content modeling 0 incremental improvements
+** disseminators - improved ease of setup, support for put/post/delete

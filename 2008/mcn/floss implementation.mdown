@@ -1,0 +1,61 @@
+* carla
+** licensing
+*** importance of OSI-approved licenses
+*** permissive
+**** unrestricted development
+**** allows most broad use of the code
+*** copyleft
+**** unrestricted development of derivative works
+**** file-based licensing
+*** strong copyleft
+**** viral effect
+*** not all licenses are compatible
+** choosing software
+** collaboration
+*** chi w/ collaboration; UCSC; hp labs
+** lessons learned: get people to work together; negotiate license front; select collaborators who want the same outcomes
+
+* chris mackie, mellon
+** research in information technology
+*** llargest known NGO funder of OSS
+*** 30+ projects
+*** every continent including antarctica
+*** http://rit.mellon.org/
+** why oss
+*** governance by/for users
+*** can't be bought/closed
+*** risk management: diffuses risks across institutions
+** why not
+*** local optimization/competency trap
+*** encourages developer-centrism, not mission centrism
+*** improperly implemented, can be subversive against enterprise IT
+** OSS business models
+*** none
+*** dual-licensing
+*** services
+*** appliances 
+*** hosting
+*** software as a service
+** varieties
+*** traditional (developer driven)
+*** single-vendor-driven ("platinum edition")
+*** community source - functionally driven
+**** community designed and built (customers/users)
+**** community owned and governed
+**** community sustained (contributions/healthy vendor ecosystem)
+**** state of the art in governance, tech, sociology and sustainability
+*** what does it take 
+**** not wealth
+
+* carl goodman, museum of the moving image/collection space
+** getting comfortable - open source as attribute, not paradigm or movement
+** oss is more different than alike
+** you're not on your own
+** collectionspace
+*** web-based collections information management and access platform
+*** flexibility
+*** UX design methodologies and processes up front
+*** reusable UI layers
+** collaboration - planning workshops mar/may 08
+** transparency
+** teams - functional, design, and development

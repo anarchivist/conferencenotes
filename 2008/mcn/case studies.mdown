@@ -1,0 +1,66 @@
+* christopher gallagher/karin patzke: AIC rapid imaging project
+** "digital archive" using off the shelf software
+** begun with prints and drawings, expanded to photography
+** created standardized workflow for all photographers working on projects
+** maintenance of daily record/statistics for imaging
+
+* matt shanley, AMNH DAMS
+** photography department serves entire museum
+** legacy system was to burn everything to cd/dvd, put them in binders, and creating an entry in an excel spreadsheet with contents
+** at 200K assets, there was still no file naming protocol etc
+** using extensis
+** needs: ease of use, scalability, automation, customization, search feature, server-client compatibility, workflow compatibility and tech support
+** portfolio server 8.5 w/ mysql backend on an xserv
+** xraid w/ 8.2 TB storage w/ raid 50
+** exabyte magnum 224 tape backup
+** client running on desktops of photo department staff; administrator only has R/W access
+** increased efficiency in terms of turnaround time
+
+* allegra burnette, MoMA.guide (kiosks)
+** collaborated w. cogapp
+** wayfinding information, exhibitions on view, event information, works with images, ecards
+** ability to change text size and contrast for usability and accessibility
+** in cocoa/flash; assets channeled through apache
+** integrated with TMS, online exhibitions, and ecard system
+** platform for electronic publishing within museum
+
+* bruce wyman, denver art museum
+** multitouch tables to compare old masters and dimpressionist works
+** visitors spend more time engaging with works
+** psychedelic posters exhibitions: using old payphones to provide UI for video display and capture
+** "wall of sound": flipping through a physical boxof records to navigate audio content
+** systems integration for administration IS - integration layer that can talk to sharepoint/excel
+
+* rob stein, IMA: institutional dashboards
+** promotion of transparency
+** building of trust within community
+** know what you care about
+** measure what you care about (http://www.artsjournal.com/artfulmanager 10/20/2006)
+** iterative improvement
+** http://code.google.com/p/museum-dashboard/ 
+** 78 statistics, 135 maintainers, 6  topics, 13 departments
+** series: evolution of statistics over time
+** curation of data - NOT a business analytics tool
+** potential tangible impact through donor relations
+** chose to require a level of human input instead of automated data collection and presentation
+** flash-based graphing/charting pulled from database tables
+** for energy use, facilities department takes gas/electric bill, converts to standard units, and then submits number; annotations available if desired
+** every statistic is assigned to an actual person
+** sends reminders about when to submit statistics
+** monitoring of "expired statistics" - visual difference leading to "peer pressure"
+** use of google analytics to track visits to dashboard; number of visitors less important than spent on website
+** tool for marketing department
+** very few other institutions have begun using this
+
+* ari davidow, jewish women's archive
+** open source DAMS
+** online-only archives 
+** 6TB of data
+** $10K raid server
+** physical security
+** what about disasters?
+** pair with others? each has to buy $20k of servers
+** cloud computing - amazon web services
+** jungle disk: s3 storage client for desktops
+** using svn for versioning (transcriptions, metadata)
+** building fedora repository

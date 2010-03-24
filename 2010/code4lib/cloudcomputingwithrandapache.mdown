@@ -1,0 +1,5 @@
+* harrison dekker
+** discovery and analysis requires special software
+** codebooks and metadata are an importantstart
+** descriptiv stats  and infoviz help
+** file formats problem not going away soon

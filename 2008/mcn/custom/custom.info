@@ -1,0 +1,6 @@
+name = Custom
+description = Customizations and site-specific code for this project.
+version = 1.0
+core = 6.x
+php = 5.2
+package = Palantir

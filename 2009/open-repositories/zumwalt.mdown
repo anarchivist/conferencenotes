@@ -1,0 +1,29 @@
+many views into complex content:
+
+* long lived, complex content
+** data must extend beyond and outlast software used to create it
+* funny problem: trying to reuse and recontextualize content in repositories
+* content in open context, users in specific context
+* example applications - rails apps on top of fedora using activefedora
+** fedora disk image
+** jwa oral history app
+** fedora-migrator - migration of flickr images into fedora
+* ease of prototyping; small, specialized apps
+** building iterativel
+** reuse of good code; finding patterns and developing prefab code
+** standing astride two different worlds: lightweight/agile app development and repos
+* conflicting sensibilities and requirements
+** flash in the pan apps vs longlived applications - allow apps to be shortlived while content is longlived
+** agile development vs big design up front - keep your eyes on the horizon (big goals) and your feet on the ground (iterative development)
+** developer happiness
+** convention over configuration - put standards in their place - make standards assumed and thus hidden conventions
+** xml is a quagmire vs. xml as preservation format, basis of interperability, etc - XML is a serialization, not a programming language
+*** HTML model has become more important than serialization
+*** JSON is very useful
+*** XSLT is declarative (good for speed, bad for dynamic code) and XML centric
+*** example: ORE and RDF while serializations are interchangeable
+** enterprise as burden vs. enterprise as reality
+* current developments
+** active fedora
+** py/django + fedora
+** islandora + drupal

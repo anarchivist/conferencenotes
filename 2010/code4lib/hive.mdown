@@ -1,0 +1,9 @@
+* HIVE: helping interdisciplinary vocabulary engineering
+** http://ils.unc.edu/mrc/hive/
+** means to add controlled vocabulary terms - making it easier
+** vocab assessment: 600 sample terms from evolution journals - 33% map to lcsh, 23 to mesh, and 22 to NBII thesaurus
+** only 9% of terms appeared in more than one vocab
+** including TGN and Long Term Ecological Research Network, TTO
+** automated term extraction - term freqs, POS tagger and normalization
+** hive.nescent.org:9090
+** hive-mrc.googlecode.com

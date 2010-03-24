@@ -1,0 +1,37 @@
+* IMLS funding for digital projects curricula
+* chuck patch, NGA
+** digital curation had different meaning ~10 years ago (curation of digital art)
+** archivists and records managers deal with issues in digital curation
+** In IT, top priority is data infrastructure with bottom-up approach
+** for archivists and RMs, top priority of knowledge infrastructure but work from top down
+** intersection of IT and ARM is that all data is now digital
+*** digital object preservation requires both archival and IT involvement
+** not an intersection in terms of timescale, system function, and lack of appraisal method for content as it relates to business function
+** tradition/misconceptions
+*** world divided into physical and digital
+*** records are dead objects
+** archiving email is not a solution; proprietary format
+** digital curator - not a person but a  role or organizing principle
+*** involved in appraisal of digital objects burt not necessary archival appraisal
+*** no tangible digital original
+** OAIS reference model - not implement fully anywhere
+** simple metadata collection
+** education of digital curator: IT knowledge, ARM concepts, and possibly digital art
+
+* wendy duff
+** expanding digital content has created necessity for digital curation
+** needs for interoperability
+** does digital information have long term value 
+** digital curation - maintaining and adding value to digital information - goes beyond preservation
+** accepts life cycle approach to ensure usability
+** focus on knowledge representation in terms of both content and context management
+** digital curation is linked to maintaining ontologies for data too
+
+* helen tibbo
+** pulled together distinct communities and accordingly is seen is more inclusive
+** lifecycle is the literal life of the data (accordingly, more like the continuum model)
+** OAIS model is fundamentally archival
+** development of sustainable and evolving digital curation educational programs
+** significant educational gap
+** Summer work - June 21-26 2009
+** digccurr data sources: lit review, syllabi and materials from existing courses and workshops, job postings, interviews, surveys...

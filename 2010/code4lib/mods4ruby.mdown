@@ -1,0 +1,3 @@
+* should we be doing this?
+* what are we trying to do?
+* inconsistency across multiple institutiosn

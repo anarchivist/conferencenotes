@@ -1,0 +1,11 @@
+* Desire to limit up front - notion of wanting to have advanced search
+* Author + title combined search
+* any/all/none vs and/or
+* fielded searching "buckets"
+* dismax misses out on boolean, but is otherwise preferable
+* http://www.stanford.edu/~ndushay/code4lib2010/advSearchSolrQueries.pdf
+* edismax: http://issues.apache.org/jira/browse/SOLR-1553
+* challlenges:
+** multiselect
+** integration with current UI - jquery functions to make facet info decisions  unambiguous
+** remove links get confusing

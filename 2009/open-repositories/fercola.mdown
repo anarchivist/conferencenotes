@@ -1,0 +1,22 @@
+SWORD in msword
+
+* scenarios/user experience
+** simplicity
+** wanting a simple exeperience for users
+* in context:
+** content - digital consumption, IR and OA, search
+** authors - self publishiing/archiving
+** publishing - multiple delivery platforms, semantics over presentation
+* digital-first workflows: author->editorial->archival
+* addin focused on simplifying authoring experience for STM
+** provides support for metadata entry, templates, NLM XML foramts
+** add-in template authoring: created my journals and repositories - extend dotx files
+** can define structure for articles: - req/optional sections, length
+** metadata support: controlled voc for keywords/taxonomies, and metadata requirements
+** sword submission info
+** ORE user interface - verbs and file formats
+* additional discussions
+** docx as container for SWORD submissions
+** open packagin conventions provide structure to zip container
+** images and supp. materials stored in doc
+** greater template validation

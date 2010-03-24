@@ -1,0 +1,54 @@
+* memcache
+    * http://thethisorthat.com/drupalcampnyc-memcache-show-notes
+    * http://drupal.org/project/memcache
+    * http://drupal.org/project/cacherouter
+    * http://www.lullabot.com/articles/setup-memcached-mamp-sandbox-environment
+    * depends:
+        * http://pecl.php.net/package/memcache    
+    * allows requests to apache to be cached to RAM
+    * caching to memory is more reliable
+
+* token 
+    * what
+        * linked with pathauto
+        * emails set on user registration
+    * how 
+        * am i raw or not - biggest mistake in token
+            * raw should be used when filtering handled by drupal later
+        * consuming tokens:
+            * token_replace($original, $type='global', $object=NULL)
+            * token_replace_multiple($original ...)
+                * for use in multiple namespaces
+        * providing tokens:
+            * hook_token_list($type = 'all')
+            * hook_token_values($type, object = NULL)
+                * provide blank strings
+        * use raw for  URIs?
+    * performance
+        * every token in a namespace generated every time
+            * e.g. each date token has multiple representation
+        * lazy generation of tokens - only generate when needed
+            * requires change of API to have registry; uses callback function
+              to generate stuff
+            * $tokens['node']['x'] = array('description'=> 'foo',
+              'callback' => 'tokenwhatever_[callback]')
+    * scannability/discoverability
+    * future
+        * get rid of raw - prob determined by consumer
+        * performance - lazy generation
+        * additional help/picker tools
+        * in core: http://drupal.org/node/113614
+
+* drupal semantics
+    * priorities for core
+        * DC
+        * SIOC
+        * match RDFA output options to fields (cck in core)
+        * export straight RDF for same data
+        * D8: import rdf
+    * scor's modules
+        * state what CCK fields represent - using evoc and RDFCCK
+        * RDF content types are mapped to classes
+        * RDFCCK has auto complete for RDF class
+        * node reference
+        * neologism

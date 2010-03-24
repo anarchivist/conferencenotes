@@ -1,0 +1,177 @@
+<?php
+
+/**
+ * @file
+ *
+ * Custom module for site-specific configuration.
+ *
+ * @copyright (C) Copyright 2009 Palantir.net
+ * @license http://www.gnu.org/licenses/gpl-2.0.html
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 2 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
+/**
+ * Implementation of hook_views_api().
+ */
+function custom_views_api() {
+  return array(
+    'api' => '2.0',
+  );
+}
+
+function custom_init() {
+  module_load_include('inc', 'custom', 'custom.orm');
+  module_load_include('inc', 'custom', 'custom.nodes');
+  module_load_include('inc', 'custom', 'custom.import');
+}
+
+function custom_menu() {
+  $items = array();
+
+  // Test page.
+
+  $items['museums/direct-access'] = array(
+    'title' => 'Direct access test',
+    'page callback' => 'custom_direct_access_test',
+    'access arguments' => array('access content'),
+  );
+
+  // Direct access method.
+
+  $items['product/search'] = array(
+    'title' => 'Product search',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('custom_product_search_form'),
+    'access arguments' => array('access content'),
+    'file' => 'custom.direct.inc',
+  );
+
+  $items['product/%product'] = array(
+    'title callback' => 'custom_product_page_title',
+    'title arguments' => array(1),
+    'page callback' => 'custom_product_page',
+    'page arguments' => array(1),
+    'access arguments' => array('access content'),
+    'file' => 'custom.direct.inc',
+  );
+
+  // Lazy-node-creation method.
+
+  $items['product/search2'] = array(
+    'title' => 'Product search and import',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('custom_product_search_import_form'),
+    'access arguments' => array('access content'),
+    'file' => 'custom.nodes.inc',
+  );
+
+  $items['product/import/%'] = array(
+    'title' => 'Product import',
+    'page callback' => 'custom_product_import_page',
+    'page arguments' => array(2),
+    'access arguments' => array('access content'),
+    'file' => 'custom.nodes.inc',
+  );
+
+  // Mass import method.
+  $items['admin/content/import'] = array(
+    'title' => 'Product importer',
+    'page callback' => 'drupal_get_form',
+    'page arguments' => array('custom_product_admin_import'),
+    'access arguments' => array('access content'),
+    'file' => 'custom.import.inc',
+  );
+
+  return $items;
+}
+
+function custom_theme() {
+  $templates = array(
+    'product' => array(
+      'arguments' => array('product' => array()),
+      'file' => 'custom.direct.inc',
+    ),
+    'product_price' => array(
+      'arguments' => 'price',
+    ),
+    'custom_node_element' => array(
+      'arguments' => array('element' => array()),
+    ),
+  );
+  return $templates;
+}
+
+function theme_product_price($price) {
+  return '$'. $price / 100;
+}
+
+function custom_product_page_title(Product $product) {
+  drupal_set_title(check_plain($product->title()));
+}
+
+function custom_direct_access_test() {
+
+  $asin = '1847192971';
+
+  //$items = amazon_item_lookup($asin);
+
+  //dpm($items);
+  //$item = new ProductSet(array($asin));
+  //display($item);
+
+  return 'foo';
+}
+
+function theme_custom_node_element($element) {
+  if ($element['#hidden']) {
+    return '';
+  }
+
+  // This is really simple and stupid, but all we need is some vague sample.
+  $output = <<<OUTPUT
+  <div class="form-item">
+    <div class="field-label"><strong>{$element['#title']}:</strong></div>
+    <div class="field-items">{$element['#value']}</div>
+  </div>
+OUTPUT;
+
+  return $output;
+}
+
+function display($var, $return = FALSE) {
+  if ($return) {
+    return '<pre>'. print_r($var, TRUE) ."</pre>\n";
+  }
+  else {
+    dpm(print_r($var, TRUE));
+  }
+}
+
+function amazon_search_simple_search($keywords = '', $parameters = array()) {
+  $parameters += array(
+    'ResponseGroup' => 'ItemAttributes,EditorialReview',
+    'SearchIndex' => 'Blended',
+  );
+  $parameters['Keywords'] = urlencode($keywords);
+
+  $items = array();
+  $results = amazon_http_request('ItemSearch', $parameters);
+  foreach($results->Items->Item as $xml) {
+    $item = amazon_item_clean_xml($xml);
+    $items[$item['asin']] = $item;
+  }
+  return $items;
+}
+

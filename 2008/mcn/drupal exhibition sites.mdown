@@ -1,0 +1,7 @@
+* Drupal's flexibility 
+* Power is being able to reuse content across interfaces
+* Ability to work with outside devs
+* IMA built project management tool
+* devel module and admin menu
+* CCK: fields  for art objects
+* views: for gallery layout

@@ -1,0 +1,7 @@
+* NYU health sciences libraries
+* had bastion host to allow III acvess
+* outside library, IT departments
+* network security consolidated, and policies were brought into focus
+** can't circumvent firewall
+** only discovered this because our ILS was down
+** VPN incompatability between network security and III

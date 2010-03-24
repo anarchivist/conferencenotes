@@ -1,0 +1,76 @@
+* talking about the "dirty work" of cleaning collections data
+* carrie beauchamp; anthro nmnh
+** 2.5M specimens, 557K catalog records
+** cataloging history: ledger book -> catalog card -> 70s RETROCON db -> EMu
+** old db: Human Relation Area Files code, storage area, culture 1 (area), culture 2 (culture), culture 3 (subculture), culture 4 (band/clan)
+** new db (EMu): each CULTURE record got first three fields dropped into "culture 1"
+*** in a sense, CULTURE records were basic authority files - divorcing item-by-item classification which could have diverging terminology
+*** New DB has new relationships for role of cultures/individuals/"parties"
+*** dirty data had dates/sites/styles combined; synonyms/alternate forms; same term at a different level
+*** out of 6K culture records, estimate 60-75% "bad"/"dirty"/duplicates
+** project planning: define goal, assess resources, establish plan/workflow
+*** define problem: slow retrieval, slow input/difficulties with consistency or existence of data, 
+*** define goal: eliminate duplicates and errors, identify synonyms, verify terms, establish 2-tier classification system; not to ensure accurate identifications or to fill out catalog records that are missing data
+*** resources: published works, content experts, data management staff, collections management software, budget
+*** workflow: clean as you go or dedicated project? create worksheets (excel), 1st pass, curator review, final data entry
+** larger questions:
+*** records with no culture - fill in based on locality?
+*** documented vs. attributed cultures
+*** natural language or codes?
+*** alternate terms/spellings
+*** old/vague terms w/ no modern equivalent
+*** classifications of diasporas/religions
+
+* kara lewis (for patricia nietfeld), NMAI
+** get collections info on web - high priority
+*** but 60-70% data incorrect or didn't exist
+*** not standardized, searchable, or easily accessible
+** expectations: time/resources/quality - reduced to time and quality
+** resources: grant - CIS management committee grant, trust fund from heye foundation MAI
+** compromises
+*** 5K records for launch
+*** must have images
+*** nothing sensitive or under repat claims
+*** readily available data
+*** basic information - but people wanted collection history/provenance
+*** verify info w/ images
+*** make data searchable
+** standardization of terms
+** differing roles for partners
+** geographical data cleanup
+*** collections manager handled research end
+*** data manager worked on implementation process
+*** contractors did data entry/adaptation of implementation
+*** geographic information was migrated into "Sites" module in EMu
+*** object data was linked to one site record but photo archives records were not
+*** Sites was project in an of itself - one person standardizes data, consistency is important, and begin in excel
+** intellectual process
+*** no abbreviations; names in language of country; alt versions in parentheses
+*** use 1st level political subdivision
+*** current names
+*** extraterritorial references
+*** conventions: country/region/state? no state?
+**** leave blank if can't determine higher subdivision; most specific info in provenience
+*** not time spent on US state site numbers
+*** started w/ spreadsheet - split into smaller basted on subdivision
+*** resources: wikipedia, statoids, IMTB, nat geographical official websites for countries and indigenous peoples; archaeological websites; maplandia
+**** GNIS, GNNS, GNS
+** implementation: start in sites module; create list w/ all fields; search and group "old data"; create new in second window - find unique combos of sites and provenience
+*** global search and replace 
+** final steps
+*** when spreadsheet complete, retire old sites records
+*** double-check with "view attachments"
+*** contractors know what's retired
+*** deletion
+** overview
+*** 1 yr w/ 2 contractors on average
+*** 15k sites records
+*** module now tightly controlled
+** conclusion
+*** let subject matter exports "own" process
+*** people implementing cleanups don't need to be subject matter experts
+*** clear step by step process
+*** allow people doing cleanup to own process too
+*** control data while cleaning = people doing work can't create new records
+*** give recognition
+*** convince people of the importance of cleaning by showing them

@@ -1,0 +1,151 @@
+* Performance improvements in 1.4
+** caching
+** concurrent file access
+** per segment index updates
+** faceting
+** docset generation
+** streaming updates for indexing
+
+* Lucene 2.9
+** IndexReader#reopen()
+** faster filter performance
+*** persegment fieldcache
+** reusable token sterams
+** faster numeric/date range queries
+
+* jvm tuning
+** -server
+** -XmxNNNNm
+** java1.6
+** garbage collector
+** 64 bit?
+** tools: jvm garbage collector logging; jconsole
+
+* more jvm switches
+** -Xloggc:FILENAME
+** --XX:+PrintGC (basic info at evey garbage collection)
+** --XX:+PrintGCDails (more detailed info)
+** --XX:+PrintGCTimeStamps
+** -XX:-HeapDumpOnOutOfMemoryError
+
+* indexing performance
+** multithread/multiprocess
+** batch documents
+** separate solr server and indexers
+** indexing master+ replicants
+** streamingupdatesolrserver + javabin -- implicitly multithreaded
+
+* MARC indexing strategy
+** solrmarc
+** future DIH hooks
+** may be combination of both hte future
+* index settings
+** useCompoundFile: set to false
+** mergeFactor: 10 or lower generally
+** ramBufferSizeMB: buffer used for added docs before flushing to directory: more predictable than maxBufferedDocs. <= 128 MB is less
+** maxMergeDocuments - max docs for single segment
+** maxFieldLength: generally MAXINT is desired
+** maxWarmingSearchers: 1 is best
+
+* searching performance:
+** javabin  - binary protocol for java clients
+** caches: filterCache most relevant here:
+*** autowarm
+*** FastLRUCache
+** warming queries: firstSearcher, newSearcher
+*** sorting
+*** faceting
+
+* debugQuery=true
+** parsed queries
+** scoring explanations
+** search component timings
+
+* query parsing
+** defType
+*** applies to main query only
+*** fq parsed as 'lucene' unless individually overridden
+** {!parser local=params}query string
+
+* solr query parser ('lucene')
+** default query parser
+** schema.xml
+*** <defaultSearchField/>
+*** <solrQueryParser defaultOperator="OR">
+** adds _query_:"..." and _val_:"..." hooks
+** supports leading wildcards with ReversedWildcardFilterFactory
+
+* dismax
+** simplified syntax
+** spread terms across query fields w/ dynamic boost per field, phrase construction (pf)
+** q/q.alt
+*** odd number of quotes is parsed as if there were not quotes
+*** wildcards/fuzzy not supported
+*** q.alt parsed as lucene, useful for *:*
+** qf/pf
+*** query fields/phrase fields
+*** syntax: field[^boost], eg. title^2 body^0.01
+*** pf for boosting where terms in q are in close proximity entire q string used as phrase implicitly
+** qs/ps
+*** query slop - used for explicit phrase queries
+*** phrase slop - used for implicit phrase queries added for pf fields
+*** no performance hit for slop built in
+** mm
+*** minimum match for optional clauses
+*** default = 100% (pure AND
+*** examples:
+**** pure OR: mm=0 or mm=0%
+**** at least 2 should match: mm=2
+**** 1-3 must match, 4 or more 90% must match = mm=3<90%
+** tie
+*** tiebreaker: more than one field may match and scored based on term freq
+*** how much final score of querie will be influenced by scores of lower scoring fields compared to the highest scoring field
+*** a value of 0.0 makes query a pure "disjunction max query": only max scoring subquery contributes to final score
+*** a value of 1.0 makes query pure "disjunction sum query": doesn't matter what max scoring sub query. 
+** bq
+*** boosting query: uses lucene qp by default
+*** combined optionally w/ users query to boost matchin ocs
+** warning: bool query w/ boost of 1.0 has clauses added as is and can be problematic by adding require/prohibited clause; could be caused by multiple bq params
+** bf
+*** boost function
+*** same as using _val_:"function(...)" in bq
+*** but careful w/ adding vs multiplying: bf will be additive, see 'boost' query parser
+
+* local params
+** {!parser p=param}expression
+** OR {!parser p=param v=expression}
+** or iniderct param values w/ $syntax = {$parser p=$p}expression&p=param
+**
+
+* Raw query parser:
+** {!raw f=field}query terms
+** exact TermQuery w/0 analysis or transforms
+** ideal for typical fq usage: fq={!raw f=format}Musical Score
+** avoids query parsing escaping madness
+
+* Field Query parser
+** {!field f=field}query terms
+** generally equivalent to field:"query terms"
+
+* prefix queryparser
+** {!prefix f=field}foo
+** generally eq to field:foo*
+
+* function query parser
+
+* boost query parser:
+** {!boost b=log(popularity)} foo
+** multiplies score rather than addative
+
+* extended dismax
+** currently in solr trunk (for 1.5)
+** supports full lucene query syntax in absence of syntax errors: and/or/not/wildcards/fuzzy and/or also
+** when syntax errors; smart partial escaping of special chars, fielded queries +/- and phrases still supported
+** shingles phrases specified in pf2 and pf3 params
+*** shingles into 2 and 3 term phrases
+** advanced stopword handling: stopwords not required ind mandatory part of query but are still used if indexed in proximity boosting part  if a query consists of ALL stopwords, then all are required
+** boost: wraps generated query w/ boost query - like dismax pf param but multiplies function query instead of adding it in
+
+* dump request handler:
+** echos params, content streams, and solr web context
+** careful w/ content stream enabled - client can retrieve contents of any file on server or accessible network share
