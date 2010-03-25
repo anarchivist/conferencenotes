@@ -1,0 +1,36 @@
+* See [tcramer's Google Doc](http://docs.google.com/Doc?docid=0AcAPFBow4sHvZGQzY2s5NGhfM2gyM2dmYmRu&hl=en)
+* Hydra background
+	* originally started sept. 2008
+	* applications can look/operate different, but has common body (Fedora repository)
+	* workflow
+		* varying approaches
+		* stanford - workdo/scripting
+		* uva - monolithic
+		* hull - BPEL driven, but probably changing because of new lack of open source BPEL implementation
+	* CRUD behavior
+		* CUD = Hydra w/ ActiveFedora
+		* R = Blacklight
+* Use cases
+	* ETDs (currently underway)
+	* SALT / AIMS (currently underway)
+	* IR (currently underway)
+	* Hydrangea - generic application
+	* EEMS - Stanford grant-funded PDF accessioning tool
+	* Under discussion/spec:
+		* MODS metadata editing
+		* Digitization workflow
+		* MSS/book mgmt/gallery tool
+		* Image management/gallery tool
+		* Map management/gallery tool
+		* Media management/gallery tool
+	* Ideas
+		* digital collections tool to replace ContentDM
+		* museum collection support tool
+		* crowd-sourcing/tagging collections, making links across collections
+		* research group support/archiving scientific data
+		* learning objects/course materials (integrating w/ Sakai/Blackboard)
+		* personal repositories
+
+* Active questions
+	* are there hydra design patterns in terms of CModels, etc
+	* Role of [EZService](http://www.fedora-commons.org/confluence/pages/viewpage.action?pageId=13762993)
