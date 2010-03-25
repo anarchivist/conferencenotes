@@ -1,0 +1,42 @@
+* Identified issues on roadmap
+	* Handling new formats - currently lots of MARC-specific behavior
+	* Integration with djatoka and streaming media services
+	* documents with multiple formats/cmodels
+	* Summon API: http://api.summon.serialssolutions.com/help/api/
+	* Integration with VuFind/XC/ILS drivers
+		* Jangle?
+	* TEI integration
+		* Raven
+	* hierarchical facets
+	* Rails 3.0 migration - not until it's in RC mode
+	* Ruby 1.9? Compatibility not assured, but jkeck heard it works
+	* JRuby (Matt Zumwalt)
+	* i18n (Chris Beer)
+		* allows local customizations of labels
+	* Plugin architecture
+	* Personalization
+	* Authorization
+	* Cherrypicking search results
+
+* Administration (via collab discussion)
+	* See [community principles](http://projectblacklight.org/?page_id=2)
+	* UVA/Stanford created Blacklight strategic advisory group
+	* Roadmap + doc
+		* institutional roadmap
+		* overall roadmap
+	* Release management
+		* duties must be clear
+		* public acknowledgement
+	* Web site manager
+	* General project administration
+	* New adopters/potential adopters
+	* Project website
+	* more official calls
+		* weekly committers
+		* larger calls with briefing paper sent out first
+		* all users not in USA
+
+* Action items
+	* stanford's ruby experience (tcramer)
+	* screencast of install for windows/mac
+	* define plugin architecture
