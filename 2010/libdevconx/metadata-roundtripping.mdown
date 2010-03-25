@@ -10,7 +10,7 @@
 	* "Draft versions" - relating to workflow
 		* canonical metadata vs. current metadata
 	* "Substantiality" of changes (Richard) - typos vs. major structural changes
-	
+	* Different editing forms based on content models
 
 * Solutions
 	* Add APIs to tools like AT
