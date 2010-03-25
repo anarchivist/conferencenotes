@@ -36,10 +36,11 @@
 * Action items
 	* Track how Hydrangea creates user interface items for corollaries in Islandora (Alex/Matt)
 	* Figure out how arbitrary templates handle arbitrarily complex XML in ActiveFedora
-    * Document opinionated and Linked Data option (Matt)
-	* UI for editing raw XML - cf. WYSIWYG "Edit as HTML" UIs
-	* Opinion XML call when ready for release (Matt)
+    * Document opinionated XML and Linked Data option (Matt)
+	* Opinionated XML call when ready for release (Matt)
 	* Look into impact of canonicalization in EAD (Mark)
 	* Feed back to AT/Archon merger team about needs for update API (Mark)
 	* Write up description of decision why not to use XForms (Matt)
+	* Remember needs UI for editing raw XML - cf. WYSIWYG "Edit as HTML" UIs
+	
 	
