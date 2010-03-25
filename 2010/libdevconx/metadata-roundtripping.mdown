@@ -39,5 +39,6 @@
 	* UI for editing raw XML - cf. WYSIWYG "Edit as HTML" UIs
 	* Opinion XML call when ready for release (Matt)
 	* Look into impact of canonicalization in EAD (Mark)
-	* Feed back to AT/Archon merger team about needs for update API
+	* Feed back to AT/Archon merger team about needs for update API (Mark)
+	* Write up description of decision why not to use XForms (Matt)
 	
