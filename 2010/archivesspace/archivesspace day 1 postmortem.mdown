@@ -1,0 +1,29 @@
+* do we talk about architecture first 
+* where can we fit in plugins?
+
+* do we discuss what's fully baked?
+* no commitment to level of detail in report?
+
+* start with persistence layer 
+
+DISCUSS
+=======
+* fundamental architecture
+    * propose restful webapp
+* persistence
+* import/export
+* discover
+* ui    
+*authn / authz
+
+hold (in "parking lot")
+=======================
+* reporting
+* workflow 
+
+hosting
+=======
+* assuming webapp - deployable on standalone machine?
+* distinguish between hosting on server (either managed by local IT or pay-for VPS) and multi-tenant
+* distinguish deployments based on scale
+* hybrid (disconnected/reincorporate -- out of scope)
