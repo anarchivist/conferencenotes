@@ -1,0 +1,348 @@
+* Framing principles (in f/t of Hi-Level specifications)
+    * TDD/frameworks if not TDD from beginning
+    * digital object storage
+
+* tension between data model and application model?
+    * can we package this in, say, an MSI for windows users?
+
+* Risk: people won't use new application
+    * how do we build a package that people want to move to?
+    * Are we using user stories to develop application? 
+    * What is our acceptance testing process?
+
+* Add migration pathways to AT/Archon to framing principles
+
+Part 1
+======
+
+* Import/export
+    * XML and CSV/OAI-PMH or Atom/RSS as containers, RDF?
+    * SKOS for subjects
+    * unAPI, COINS?
+    
+    * separate import from export?
+     
+    * candidate formats for import - mapping to existing 
+    * use of community standards vs. ASpace e
+
+    * import pathway: 
+        * mapping to SOMETHING, either:    
+    * ASpace Schema
+        * pro: facilitate cross a-space instance m9igration
+        * pro: maintain lossless transformation
+        * con: competition with community standards
+    * community standards
+        * pro: interop
+        * con: gaps for development
+        * middle path: creation of supplemental schemas, encoding guidelines, etc
+    * candidate solutions:
+        * XSLT
+        * CSV
+    
+    * minimize loss
+    
+    * does imported data go to a single store?
+
+* Storage/persistence
+    * candidate solutions
+        * hibernate
+            * nothing good to say about it
+        * object DB
+            * schemaless
+            * embedded
+            * db 4.0
+    * need embedded database for single deployments
+    
+    --
+    
+    * nosql
+        * con: bleeding edge (relatively speaking)
+
+    * JCR/CMIS
+    * relational db
+        * do we need a database abstraction layer?]
+
+    * filestore
+        * archon storing files as blobs
+        * candidate: reference by URI
+        * CMIS?
+
+* authorization
+    * application policies
+    * group definitions
+    * groups, roles, tasks
+    * mapping institution role to application-defined role?
+    * which ACL library?
+    * build field-level ACL into data model even if it isn't otherwise implemented
+    
+    * XACML for policy definition
+    
+Part 1 Plenary
+==============
+
+* AuthN
+    * need local (db-based) authn
+    * other plugins:
+        * sso: cass, LDAP, openid, pubcookie
+        * use cases 
+            * disconnected operation?
+        * IP-based authN got a 0! (from IT perspective)
+    * what would support of multiple authn regimes look like?
+    * collectionspace: users specify identity provider
+        * local, shib, open id, etc
+    * stacked authentication
+        * local first -> sso (or vice versa)
+        * each IdP has a ranking
+    * where does authn level/IdP come into role definition?
+    * ID provisionong outside of ASpace?
+    * defining base role for authn based on system (to ensure prevention of grants of admin access)
+
+* AuthZ
+    * need to define custom roles, distinct repositories
+    * contract description for specific repositories: CSpace - how to track roles across multiple repositories
+    * authz and authn should be abstracted (not hardcoded as part of system)
+    * how much granularity is required
+    * ight not be supported by existing authz frameworks (like spring) - might need to build our own
+        * existing frameworks more specifically will likely not be enough
+        * edit vs. see field
+    * problem of multi-tenant authz
+        * defining/populating groups/roles
+        * specifying/enforcing permissions
+        * does UI or service enforce roles?
+            * how? XACML?
+    * need to write custom code to handle some enforcement of authorization
+    * tension with policy for students and researchers
+    * application policies vs. group definition
+    * candidates
+        * mapping institutional roles to app defined roles, e.g. drupal
+        * zend ACL
+        * code abstraction
+    * build into data model even if it isn't otherwise implemented
+    * ship with predefined roles (5?)
+
+* Storage/persistence
+    * AT built on Hibernate/MySQL,MSSQL,Oracle
+    * Archon: MDB2/MySQL,MSSQL
+    * Only 2-3 AT insts use MSSQL, 1 uses oracle; Archon: 30% MSSQL
+    * Need 2 persistence layers: one for metadata, one for datastreams for digital objects
+    * JCR or CMIS; reference by URIs
+    * Object database
+    * NoSQL (bleeding edge?)
+    * RDF (bleeding edge?)
+    * SQLite, memcache
+    * Indexing: Solr? Solr as datastore?
+    * Abstraction layer:
+        * hibernate (not a good solution)
+        * Kuali Rice: OJB, JPA
+    * Philosophical issues
+        * is it too complex to contribute?
+        * we need to develop an application to allow sustainability, sharing at network level; hosted solution is one approach to do that 
+        
+* import/export
+    * containers vs. form of data
+    * imports - two scenarios
+        * a-space schema
+            * pro: facilitates a-space migration
+            * con: compete from community standards/chemas
+        * community standards:
+            * - ead, marcxml, etc
+            * supplement with own schemas
+            * mapping to internal a-space chema
+            * XSLT based on community standards
+    * ETL tools - data warehousing community
+        * http://en.wikipedia.org/wiki/Extract,_transform,_load
+        * pick schema to ingest, then will assist to migration
+    * recommend no new serialization formats
+    * binary serialization for transfer between application instances
+    * CSV will need to conform to a standard
+    * how many CSV profiles?
+    * current AT technologies
+        * XSLT
+        * hardcoded mapping in JAXB
+        * would it be possible to make import/export mapping configurable by a non-programmer? (ie non-java programmer)
+    * transmission of rights data
+            * FESL, XAML?
+    * identifier services? relationship
+    * migration
+        * lossless import from AT/archon - perhaps via SQL
+    * when loss in import, consider retaining original copy of imported data
+    * serialization: rather than doing db scripts dump to serialized version and then rload
+    * spoke and hub - exports as spokes off "hub" model
+    
+Part 2
+======
+    
+* workflow
+    * rules engines
+        * drools
+        * Kuali Rice: moving to drools
+    * expression languages
+        * jbpm
+        * bpel  
+    * integration requirements are well understood for drools
+    * ECMs support languages, but don't use drools
+    * distinguish between defined backend workflow (automated) vs. approval process (human)
+    * "documents" are really entities in workflow 
+    * workflow authoring or just support import of workflows
+    * collectionspace: participants hostile to idea of workflow initially, but then represented as asset tracking/reporting
+
+* discovery
+    * user ("public") access and staff-based access
+    * need REST interface/"resource oriented architecture"
+    * acknowledge human access mechanism will not be standard for access but rather harvesters of this data
+    * how do we address evolving users who dont use traditional access systems
+    * we need datamodel that will spin 
+        * how granular URIs will be
+        * how to relate URI hierarchy
+        * persistence of URI
+        * hackability of URIs
+            * content negotation
+        * access restrictions
+    * issue of search engine optimization
+    * two axes of discovery
+        * human/automated
+        * browse/search
+    * consider using SRU 
+
+* UI
+    * web vs. client
+    * seperation of model from UI/MVC
+    * handheld/iPod 
+    * Sakai 3: using lots of JS (Fluid)
+        * drag/drop
+        * "desktop-like" UX with web technologies
+            * inc. LocalStorage
+        * all services are RESTful (HTTP+JSON)
+    * Fluid+inFusion is also UI for collectionspace 
+    * Accessibility issues?
+        * CSPACE: exceed regulations; use keyboard ui
+    * administrator should be able to see the public interface
+    * establish minimum browser, but no plugins
+    * what can we do to help web experience as good as the desktop client?
+    * Candidates:
+        * google web toolkit (swing-like)
+    * need regular, iterative usability testing
+
+Part 2 Plenary
+==============
+
+* reporting
+    * management reporting vs. user reporting
+    * is a report just a view of a search or is it really a new activity?
+    * customization vs. canned searching?
+    * will customization require programming?
+    * integration concerns
+        * existing tools are SQL based
+        * need for command line interface 
+    * archivist reports
+    * site statistics
+        * use (web service)
+        * extent
+        * use (physical)
+    * logging implications/audit trail?
+    * relationship between searching and reporting
+        * "fancy search" or "advanced search"
+    * need to ship w/ canned report
+    * little demand for self-serve, custom reports
+    * data warehousing (e.g. ETL)
+        * intermediate mapping of data model
+        * another view on same data with more human-friendly representations
+    * ultimately, data into human readable form
+    * AT using jasperreports, but downside is the overhead
+    * devise standard workflow to create reports; need for explicit configuration instructions
+    * creation of reports should be outsorced
+    * what is overlap between searching and reporting?
+        * more murky in the AT
+    * how to distinguish between user reports and management reports?
+    * "dashboard" view of data - aggregation, calculation
+
+* workflow
+    * rules engines:
+        * drools
+    * expression languages
+        * jpbm
+        * bpel
+        * yawl
+    * distinguish between automated workflows and human-based ('approval') workflows
+    * trying to build workflow authoring tool is way too big to do in first phase of application
+        * authoring outside of archivesspace, only interpretation
+    * using standard tools /standard expression languages consultans can build workflows
+    * urge users to contribute workflows back to community
+    * recommend toolkits/authoring tools
+    * provide configuration/narratives
+    * check back w/ community - standard built in workflows should make sense of community
+    * how much granularity do you need? 
+    * analysis: what needs to be built? consult community
+    * anticipate need for workflow engine ultimately, but not in v. 1.0?
+        * just as much work to put in to hooks than to implement a workflow engine?
+    * what are the benefits to put workflow engine into an application?
+    * can workflow engine result in ACL wins? 
+    * how to tie to authz?
+    * conditions
+        * assertion, balidation, sceduling, tracking/trabnsactions, state ttransitions
+        * granularity
+        * ability to disable/override?
+    * concerns about complexity
+    * dowe capture state of objects? 
+
+* UI
+    * web vs. client?
+    * what can we do to make the experience as good as possible?
+        * html5 localstorage
+    * minimum browser requirements
+    * choose good AJAX library (yui, jquery UI; fluid + fusion)
+    * accessibility issues
+    * HTML5 + JSON + REST
+    * iterative, community-based user testing
+        * have people test as soon as you have things together
+    * need for clear UX design
+
+* discovery
+    * personas
+        * archivists
+        * faculty
+        * researcher
+    * discovery is primarily will happen on other people's interfaces
+    * we have to acknowledge human access mechanisms will not be the standard for access but rather harvesters
+        * resource oriented architecture + content negotiation
+        * same interface would support any variety of interfaces
+    * we need a data model that will address
+        * granularity of URIs
+        * how to relate the URI hierarchy
+        * persistence of URIS
+        * hackability
+        * access restrictions/roles
+    * two axes of discovery
+        * human/automated
+        * browse/search
+    * use archon as the baseline
+    * consider using SRU
+    * no advanced search out of box
+        * single search box w/ refinements like faceted searching ,etc
+    * multi-lingual indexing
+    * cross-lingual indexing
+    * faceted browse is backed by structure of an ontology
+        * backed by point of view
+        * problem of terms of art/jargon
+        * crossdiscipline searching
+    * ranking/a priori weights
+        * advanced search tools using inference  in indexing
+    * technical solutions
+        * native db indexing
+        * solr/lucene
+            * do we bundle that as parto fhte install
+            * configuration
+            * hiring external expertise
+        * data warehousing
+            * change point of view of data model
+        * syndication
+            * topic maps
+            * OAI-PMH/RSS/Atom
+            * updates - discovery things using implementation needs
+            * versioning/keeping data fresh
+                * core requirement of data
+                * label version of URI/resource as permanent for use of citation
+                * dealing with born-digital records
+                * Memento?
+        * XTF
+        
