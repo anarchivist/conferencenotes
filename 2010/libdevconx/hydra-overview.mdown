@@ -1,2 +1,2 @@
 * See [Hydra Stack: Getting Started](http://docs.google.com/View?id=ddrmhvjh_181gj9b7rcv) and [Hydrangea on Github](http://github.com/mediashelf/hydrangea)
-* See also [Cheryl Klimaszewski's notes](http://docs.goo gle.com/View?id=dfstjfd9_403f773kdd3)
+* See also [Cheryl Klimaszewski's notes](http://docs.google.com/View?id=dfstjfd9_403f773kdd3)
