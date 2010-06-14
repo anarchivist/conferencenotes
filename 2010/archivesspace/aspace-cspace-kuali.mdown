@@ -1,0 +1,81 @@
+* functional spec overlap
+    * Google doc: http://spreadsheets.google.com/ccc?key=0Asy1vjqwqKwddFVqZ24xRHlSa05QcUxXR1FOTEpGRXc&hl=en
+    * overlap esp. could include rights management: what about licensing issues?
+    * are there problems or not with areas of functional overlap?
+    * vocabulary management
+        * relation to family structures?
+        * linked data
+    * multilevel description
+
+* collaboration
+    * workflow
+    * "functionality/configuration profiles" for types of institutions
+        * similar to social engineering as metioned in aspace
+        * need for community evangelists
+    * what does it mean for collaboration between incredibly different application types? or domains?
+        * tuning for application stacks
+        * reuse across services
+        * but reuse doesn't come for free
+        * swappable parts of stack?
+        * swappable parts of data models
+    * challenges
+        * project management
+        * layers of conversation
+        * priorities
+        * schedule
+        * deliverables  
+    * three different projects
+        * integrate one?
+        * integrate all.
+        * greater overlap between aspace and cspace
+        * options
+            * three separate application development efforts w/ lightweight collaboration
+            * share code
+            * building aspace as instance on collectionspace services (merge projects)
+            * CS/AS share services with OLE
+        * how to deal with conflicts; 
+        * how to deal with distinguish between public users
+    * mix/match discovery based on 
+    * definition of access
+    
+
+* technology overlap
+    * cspace
+        * functional reqs, usre testing, integration points, deployment preparation
+        * 1.0 - summer 2010 
+            * acq
+            * cat
+            * loan in/out
+            * object entry/exit
+            * location control
+            * reporting
+            * relationships between all thigns
+            * user management
+            * authn & authz
+            * administrative tools missing
+                * e.g. provisioning new tenant
+                * vocabulary mgmt import/export UI tools
+        * 2.0 - october 2011
+            *
+    * aspace
+    * ole
+    
+* stewardship of content
+* central IT responsibilities
+* CSPACE/ASPACE/OLE Timeline: http://spreadsheets.google.com/ccc?key=tz_XtXdLRm0HqZdDy4kuV7g
+
+* Recommendation
+    * apps built on common platform
+        * common platform conceptually implies common technical platform
+        * ECM?
+    * which level is platform?
+        * application layer?
+        * service layer?
+
+* followups
+    * consider list of potential implications of collaboration options (collaborative on larger group)
+    * agreement on what "platform" means, plus scale of agreement about what that entails (technical group)
+        * understanding of kuali rice and collectionspace
+    * functional discussion (BW and PS plus others?)
+    
+    

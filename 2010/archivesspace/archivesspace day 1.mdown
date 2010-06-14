@@ -283,7 +283,7 @@ Part 2 Plenary
         * granularity
         * ability to disable/override?
     * concerns about complexity
-    * dowe capture state of objects? 
+    * do we capture state of objects? 
 
 * UI
     * web vs. client?

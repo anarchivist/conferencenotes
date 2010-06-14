@@ -1,0 +1,189 @@
+* Candidate technologies
+* Nominations from floor
+* Pro/Cons/Showstoppers
+
+Fundamental Architecture
+========================
+* Potential candidates
+    * RESTful web application (preferred)
+        * does this mean traditional web application with REST-based services?
+        * suggest Resource Oriented architecture w/ full crud access to resources
+        * by defining services layer, application doesn't care what's behind it
+        * goal should be to fulfill RESTful contract
+        * do we use an MVC framework
+        * rephrase SOA using RESTful technologies
+    * Other web services-based Web application (e.g., SOAP-based)
+    * "Thick" desktop client (e.g. existing AT client)
+
+* Deployment
+    * OSGi application within Eclipse?
+    * Nathan's comment on RESTlet deployment
+    * Full stack deployment option
+    * Virtual appliance
+
+Persistence/Storage Layer
+=========================
+* NOTE: Perhaps consider separating this into persistence for metadata vs. persistence for digital objects
+* Potential candidates
+    * Relational database (emphasizing MySQL?)
+        * nested set design
+        * easily scalable to millions of rows
+    * Object database
+    * "NoSQL" non-relational database (usually document-oriented; often schemaless; e.g. CouchDB, Cassandra)
+        * unlikely that this would be a candidate?
+    * Solr?
+    * RDF in triple store or graph database (e.g. Mulgara, Sesame, Neo4j, AllegroGraph)
+    * Java Content Repository/CMIS (perhaps for digital object storage)
+        * quick win for ECM-related deployment
+    * Local and/or network file system (for digital object storage)
+
+* Are you going to write everything from scratch, or a we using a particular kind of framework?
+
+* Open questions
+    * Do we need a database abstraction and/or ORM layer?
+        * Current argument is for a DB abstraction layer if we choose a relational DB; plan on supporting MySQL out of the gate, and allow for expansion to other RDBMSes by developer community
+        * Repeated statements by meeting participants to avoid using Hibernate
+        * Potential candidate: Kuali Rice (uses OJB/JPA)
+    * Is versioning part of the persistence layer or the data model, or both?
+    * Development methodology?
+        * esp. Scrum/agile; if not agile, there need to be business 
+
+Import/export
+=============
+* Potential candidates
+    * Import formats (i.e. specific schemas)
+        * Exclusive use of community schemas
+            * con: lack of existing schemas for some areas
+        * Exclusive use of a set of ArchivesSpace-created schemas
+            * con: does not leverage community standards/schema
+        * Use of community standards where available, with constraints, extensions, and supplemental ArchivesSpace schemas as needed/appropriate (preferred)
+            * note: need to leverage ability to create more widely usable schemas from these ASpace-specific schemas
+            * example - blackboard internal schema became IMS content package
+            * standard/extension blocks in 
+    
+    * Import containers (i.e. data formats) - note: arguably all are required
+        * CSV
+            * requires a certain number of preconfigured "profiles" for column order, etc. restrictions
+        * XML
+    
+    * Mapping layer
+        * Hardcoded (currently implemented by AT [and Archon?])
+            * con: not flexible; requires modifying application code
+        * XSLT
+            * pro: flexible; easily adaptable by "non-programmers" in archives domain - some archivists have XSLT experience based on publishing EAD
+        * Extract, Transform and Load (ETL) tools from data warehousing community
+    
+    * Specific formats for import/export (new functionality)
+        * Rights metadata
+        * SKOS for controlled vocabularies        
+
+    * IMPORT {EAD, ETC} -> CANONICAL ARCHIVESSPACE SCHEMA -> INGEST
+    * 
+    
+* Open questions
+    * How do we minimize the lossiness/enable roundtripability of imports/exports?
+        * Retain copy of original imported XML (e.g. MARCXML?)
+        * Aquifer allowed uploading XSLT for pre-processing output
+        * XSLT for both in and out?
+    * Obviously migration is part of import/export, but how to implement?
+        * Potential serialization rather than SQL scripts for data migration
+            * Binary?
+            * XML?
+    * How does import/export relate to things like identifier generation services (handle, ARK, etc.)?
+
+Discovery
+=========
+* Potential candidates
+    * Architecture
+        * REST mechanism for discovery, w/ HTTP content negotiation (e.g., for SEO-optimized versions of resources based on GoogleBot user-agent declaration, or to return different natural language or format [eg RDF, RSS] versions)
+    * Indexing
+        * Native DB/persistence layer indexing
+        * Lucene
+            * via Solr
+            * via XTF
+        * Data warehousing (ask Patrick S. to clarify?)
+    * Search protocols
+        * SRU/SRW
+        * OpenSearch
+        * "metasearch sucks"
+    * Syndication/Harvestability
+        * OAI-PMH
+        * Atom/RSS
+        * OAI-ORE
+        * Topic Maps
+        * RDFa or other microformats
+        * lots of places don't want to be harvested anymore
+
+* Open questions
+    * HOW DO YOU REPRESENT ITEMS IN CONTEXT IN SEARCH RESULTS? AT THE THE SEARCH RESPONSE LEVEL? IN UI?
+    * How do we create persistent, hackable URIs that are also granular and reflect hierarchy?
+        * UUIDs are ugly
+        * persistent/hackable are sometimes in conflict
+        * issue of restructuring, versioning
+        * enumerating ancestors/descendants in response?
+    * How do we provide access to specific versions of resources?
+        * Consider using Memento
+        * Do we need to reflect specific versions in URI structure?
+        * VERSIONING NEEDS TO BE CLARIFIED RE: COMMUNITY VIEW
+        
+User interface
+==============
+* Potential candidates
+    * "Thick client" application
+    * Dynamic web application reliant on browser only - PREFER
+        * Established technologies: (X)HTML, CSS, JSON, JavaScript w/ req. libraries like jQuery UI, Fluid, etc.
+        * Emerging technologies: HTML5 - e.g. for things like LocalStorage (cf. Google Gears), native drag & drop, etc
+    * Dynamic web application reliant on plugins
+        * e.g. Java, Flash, etc.
+    * Mostly non-plugin based, but integrate plugins/new technologies like HTML5 video as needed
+    * Potential need for simple media player
+
+* Open questions
+    * Declaration of minimum browser requirements/suggestion of avoiding plugins
+        * CSpace - tier 1/tier 2 for browsers (ie7 moved to tier 2)
+    * How much do UI elements/application behavior need to degrade gracefully?
+    * Accessibility?
+        * Commitment to keyboard navigation, etc.
+    * Need for iterative user testing on application, feedback on wireframes, etc
+        * cspace does weekly testing; 15-20 active participants
+        * announcement by user release; personal interaction
+    * two separate UIs? 
+        * e.g. drupal vs. wordpress
+    * emphasis on fluid infusion
+
+AuthN/AuthZ
+===========
+* Reminder, no potential candidates - need for flexible/pluggable AuthN and AuthZ system; depends on choice of application stack, programming language, etc.
+* Minimum requirements:
+    * Local AuthN + pluggable replacement
+    * Local ACL/Role definition 
+* Expression/enforcement of policies
+    * DB-backed ACL (ala Drupal, ICA-AtoM)
+    * XACML
+
+Advice to design/development team
+=================================
+* Importance of 
+* Licenses?
+    * Mellon pushes hard on APL2; doesn't like GPL
+    * ECL?
+    * One click install under  GPL
+    * Sakai uses lots of 3rd party FLOSS software; no viral 
+* Get stack integrated early
+* Harder to do agile architecture
+* Sprints on architecture
+* Sprint durations/offsets?
+    * functionality/ui vs. service dependencies
+    * service team will be ahead of app/ui team; functionality team has to be ahead of service team
+    * DOCUMENT LESSON ON AVOIDING HOW OTHER PEOPLE ORGANIZED PROJECTS
+    * CONSIDER DESCRIPTION OF DEVELOPMENT PROCESS IN REPORTS
+* Continuous integration
+* Atlassian confluence/JIRA/Bamboo
+* Migration pathway for archon on hosted solution
+* Hosting consideration
+    * multitenant testing from beginning
+    * relation to support model?
+* Languages
+    * appropriate to service level or part of application
+    * python? ruby? java?
+    

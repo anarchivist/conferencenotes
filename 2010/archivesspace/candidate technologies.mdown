@@ -1,0 +1,118 @@
+Fundamental Architecture
+========================
+* Potential candidates
+    * RESTful web application (preferred)
+    * Other web services-based Web application (e.g., SOAP-based)
+    * "Thick" desktop client (e.g. existing AT client)
+
+* Open questions
+    * Will a RESTful web application be deployable on a standalone machine?
+        * ASpace team assumes yes; asking this question of larger meeting to get feedback
+
+Persistence/Storage Layer
+=========================
+* NOTE: Perhaps consider separating this into persistence for metadata vs. persistence for digital objects
+* Potential candidates
+    * Relational database (emphasizing MySQL?)
+    * Object database
+    * "NoSQL" non-relational database (usually document-oriented; often schemaless; e.g. CouchDB, Cassandra)
+    * RDF in triple store or graph database (e.g. Mulgara, Sesame, Neo4j, AllegroGraph)
+    * Java Content Repository/CMIS (perhaps for digital object storage)
+    * Local and/or network file system (for digital object storage)
+    
+* Open questions
+    * Do we need a database abstraction and/or ORM layer?
+        * Current argument is for a DB abstraction layer if we choose a relational DB; plan on supporting MySQL out of the gate, and allow for expansion to other RDBMSes by developer community
+        * Repeated statements by meeting participants to avoid using Hibernate
+        * Potential candidate: Kuali Rice (uses OJB/JPA)
+    * Is versioning part of the persistence layer or the data model, or both?
+
+Import/export
+=============
+* Potential candidates
+    * Import formats (i.e. specific schemas)
+        * Exclusive use of community schemas
+            * con: lack of existing schemas for some areas
+        * Exclusive use of a set of ArchivesSpace-created schemas
+            * con: does not leverage community standards/schema
+        * Use of community standards where available, with constraints, extensions, and supplemental ArchivesSpace schemas as needed/appropriate (preferred)
+            * note: need to leverage ability to create more widely usable schemas from these ASpace-specific schemas
+    
+    * Import containers (i.e. data formats) - note: arguably all are required
+        * CSV
+            * requires a certain number of preconfigured "profiles" for column order, etc. restrictions
+        * XML
+    
+    * Mapping layer
+        * Hardcoded (currently implemented by AT [and Archon?])
+            * con: not flexible; requires modifying application code
+        * XSLT
+            * pro: flexible; easily adaptable by "non-programmers" in archives domain - some archivists have XSLT experience based on publishing EAD
+        * Extract, Transform and Load (ETL) tools from data warehousing community
+    
+    * Specific formats for import/export (new functionality)
+        * Rights metadata
+        * SKOS for controlled vocabularies        
+            
+* Open questions
+    * How do we minimize the lossiness/enable roundtripability of imports/exports?
+        * Retain copy of original imported XML (e.g. MARCXML?)
+    * Obviously migration is part of import/export, but how to implement?
+        * Potential serialization rather than SQL scripts for data migration
+            * Binary?
+            * XML?
+    * How does import/export relate to things like identifier generation services (handle, ARK, etc.)?
+
+Discovery
+=========
+* Potential candidates
+    * Architecture
+        * REST mechanism for discovery, w/ HTTP content negotiation (e.g., for SEO-optimized versions of resources based on GoogleBot user-agent declaration, or to return different natural language or format [eg RDF, RSS] versions)
+    * Indexing
+        * Native DB/persistence layer indexing
+        * Lucene
+            * via Solr
+            * via XTF
+        * Data warehousing (ask Patrick S. to clarify?)
+    * Search protocols
+        * SRU/SRW
+        * OpenSearch
+    * Syndication/Harvestability
+        * OAI-PMH
+        * Atom/RSS
+        * OAI-ORE
+        * Topic Maps
+        * RDFa or other microformats
+
+* Open questions
+    * How do we create persistent, hackable URIs that are also granular and reflect hierarchy?
+    * How do we provide access to specific versions of resources?
+        * Consider using Memento
+        * Do we need to reflect specific versions in URI structure?
+        
+User interface
+==============
+* Potential candidates
+    * "Thick client" application
+    * Dynamic web application reliant on browser only
+        * Established technologies: (X)HTML, CSS, JSON, JavaScript w/ req. libraries like jQuery UI, Fluid, etc.
+        * Emerging technologies: HTML5 - e.g. for things like LocalStorage (cf. Google Gears), native drag & drop, etc
+    * Dynamic web application reliant on plugins
+        * e.g. Java, Flash, etc.
+
+* Open questions
+    * Declaration of minimum browser requirements/suggestion of avoiding plugins
+    * How much do UI elements/application behavior need to degrade gracefully?
+    * Accessibility?
+        * Commitment to keyboard navigation, etc.
+    * Need for iterative user testing on application, feedback on wireframes, etc
+
+AuthN/AuthZ
+===========
+* Reminder, no potential candidates - need for flexible/pluggable AuthN and AuthZ system; depends on choice of application stack, programming language, etc.
+* Minimum requirements:
+    * Local AuthN + pluggable replacement
+    * Local ACL/Role definition 
+* Expression/enforcement of policies
+    * DB-backed ACL (ala Drupal, ICA-AtoM)
+    * XACML
