@@ -1,0 +1,31 @@
+* behind the padlock: https ubiquitious and fragile
+* conventional wisdom: HTTPS is for credit cards/payment transfers/banks etc
+	* HTTPS was invented to assure users about credit card transactions
+	* but not clear how relevant it is to credit card fraud
+	* for many users, CC# are not the most sensitive or private info they communicate online
+	* a lot of net users give their CCs in person many times per day
+* site operators are realizing that all kinds of info is private/sensitive
+	* want to protect passwords and downlads
+	* packet sniffing is really easy
+* https is fragile
+	* ssl stripping
+		* even a site that tries to require HTTPS (301 redirects) might not succeed
+		* attaciers can hide redirect
+		* moxie marlinspike's sslstrip
+    * strict transport security
+		* sites can say "HTTPS only"
+    * https everywhere: firefox plugin
+	* PKI problems: scandals/skepticism
+		* lots of root CAs. who are they/ how are they chosen?
+		* md5 collisions (sotirov et al.)
+		* null prefix attack (moxie marlinspike) - partially browsers' fault
+		* issuing certs w/ no checking at all
+		* packet forensics suggest court orders for certs (soghoian + stamm)
+		* cnnic root CA addition controversiy
+* ssl observatory
+	* empirical survey of "sort of" all public certs presented by https servers on ipv4 net
+	* learn about how CAs are used/and retrospectively detect misbehavior by CAs
+	* analysis underway, to presented at defcon
+	* will have way to accept cert observations from public and allow public to review dataset
+* monkeysphere/talking about keys
+	* making assertions about keys

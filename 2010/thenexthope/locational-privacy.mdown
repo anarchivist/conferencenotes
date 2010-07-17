@@ -1,0 +1,22 @@
+* http://mayhemiclabs.com/
+* http://www.icanstalku.com/
+* http://www.innismir.net/
+* http://twitter.com/innismir
+* perl script to crawl twitter grabbing photo service uris
+* google app crawls photos; these services don't scrub EXIF data
+* celebrities are not immune
+* found photo of dude fapping; harvested geotag data from exif data
+    * could then use pipl/spokeo to find facebok etc
+    * facebook could then recover more more more
+    * then found gpsed.com account
+* twitpic does not delete photos after you delete your twitter account
+* some people were ok with icanstalku, and thought they were "self-censoring" enough
+* small bits of geo-tagged data were pieces to a puzzle - meaningless by themselves, but when put together, they make a bigger picture
+* tools will be available onlie; in perl
+    * stalk.pl extracts geotags from each photo and then create a KML file or [?]
+    * reap.pl extracts data from each photo
+* solutions
+    * three places to elimate issues
+    * users: uphill battle (eg iphone preserving location sharing across multiple revisions of the phone)
+    * services: not ideal - still allows services to monitor exif data
+    * operating systems: best option; make geotagging opt- in or allow ing it to be enabled on a per-photo basis 
