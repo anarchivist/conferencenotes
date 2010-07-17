@@ -1,0 +1,15 @@
+* in context of social media apps on mobile phones
+* motivated by interest in technology
+* twitter
+	* original geotagging on twitter: early 2009 - only "most recent" loc. info avail
+	* late 2009: introduction of per-tweet tags
+    * "fudge" factor based on innacuracy - cell tower vs. assisted etc ...
+    * but that is not enough, based on being able to detect patterns
+    * one geotag is an anecdote, but multiple geotags become data
+	* streaming API can now filter based on location
+* clustering
+	* np-hard
+	* but, working pseudocode
+* classification
+	* using keywords (eg "dog", "sleep," "bed" "watching" etc at home)
+	
