@@ -1,0 +1,30 @@
+* penetration testing
+    * black/gray/white box testing
+    * ethical hacking
+    * sec audits
+    * vulnerability assessment
+    * standards compliance
+* shodan is a search engine that interrogates ports and grabs resulting banners, then indexes them rather than web content for searching
+    * finding specific content in banners
+    * which services, which versions of services
+    * helps finding specific nodes
+    * http://shodanhq.com/
+    * google-like +/- query syntax
+    * login not required, but country/net filters and export won't be available
+* filters:
+    * country:
+    * hostname:
+    * net:
+    * os:
+    * port:
+* mostly port 80, but some 21/22/23
+* export in XML
+    * up to 1000 results per credit
+* using shodan for penetration testing
+    * ethical issues:
+        * is it acceptible under any circumstances to view config of device that requires no authN to view?
+        * viewing config using default u/p?
+        * unique u/p?
+        * changing config?
+    * requires basic familiarity w/ http banners & status codes
+

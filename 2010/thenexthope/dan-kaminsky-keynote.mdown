@@ -1,0 +1,54 @@
+* Dan Kaminsky
+* tls -negotation bug
+    * project mogul senft fix
+    * off by default everywehere
+* as hackers, we're good at breaking things, but our remediation advice tends towards myopia
+* we are the keys to there being good advivce
+* the web was never designed to have authenticated resources
+* cookies sent with requests caused by third party domains
+* XSRF tokens are a solution, but they're a lot of work
+* couldn't tools be better?
+* dakami tried building 4 different systems that don't require browser changes
+    * we are slow to break things though
+    * we don't break during dev
+    * we don't break at release
+    * we don't break during early adoption
+    * only break after popularity
+* session management will take deep changes to the browser
+* why aren't type safe languages safer against web attack than the type unsafe languages?
+* all injections are type bugs
+    * C#/php/ruby sender thinks there's a string there
+    * SQL thinks there's a string, a concat, another string, comparator, and more strings
+* is it possbile to let devs write inline cod without exposing strings to injections?
+    * yes: make string interpolation smarter
+    * retain - language can see boundary between environment and variable
+    * translate - given that, language can do smarter things
+    * eg http://tinyurl.com/2lbrdy
+* interpolique: http://www.recursion.com/interpolique.html
+* b64d() in mysql
+    * type safe going in AND out
+    * either late binding or early binding
+    * late binding - text is plain until right before it crossed frontend/backend layer
+        * select * from x where y=^^foo
+    * early binding 
+* base 64 in browser:
+    * <span id=foo b64text="Zm9v"></span><script>do_decode(foo)</script
+    * decode looks element in O(1) time
+* dom intereaction
+    * push to textcontent
+    * never go through browser HTML parser
+    * complex:
+        * push to appropriate create elemejts
+        * basic idea is to have a simple HTML parser that extracts what it can, creates elements according to whitelisted rules, and never uses browser HTML parser
+    * http://www.cs.uic.edu/~venkat/ - blueprint
+* security is quantized
+    * set of elements can be safely exposed, and another set that can't 
+* primary mechanism: eval, but we can operate without eval
+    * one approach: var arg functions w/ string subclass tagging
+* custom interpolators are had because of scope issues (lexical vs. dynamic)
+    * lexical scope is favored and removed methods that allow any code to acces variables not explitly plushed in
+    * makes it hard to write function that sees ^^var and dereferences var
+* languages need to be informed by findings of penetration testing
+* handlers appear relatively solid
+* performs well, but eval is still relatively fast. base64 is fast.
+
