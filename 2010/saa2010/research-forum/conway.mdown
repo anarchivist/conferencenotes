@@ -1,0 +1,32 @@
+Archival Quality in Digital Preservation Repositories: Paul Conway
+------------------------------------------------------------------
+
+* archival quality is an archival value
+    * ~1939+: distinguishing characteristics
+    * 1961+: technical characteristics of longetivity
+    * 1985+: protection against loss
+    * 1995+: completeness and process control (via InterPARES)
+    * 2001+: migration of essentia elements/significant properties
+
+* based on digital library quality (sarasevic et al)
+* vertical integration in repository environment switching to distributed management
+    * take what you can get
+* quality standards at this point focus on process control; move towards acceptance testing
+* use cases
+    * reading online
+    * reading volumes printed on demand
+    * processing full-text data
+        * non-consumptive research
+    * managing print collection
+
+* what is intrinsic quality within the context of digitized books and serials [and other bound materials]
+    * error measure - some based on incidence of critical error in hathitrust
+    * iterative process
+    
+* incentivization of resources
+* implications
+    * tools/techniques for preservation/dl practice
+    * expose content quality as part of certification process
+    * limitations of use case scenarios
+    * need for automated quality validation routines
+    * Certification of trusted repositories must includ assessment of quality

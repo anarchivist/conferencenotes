@@ -266,7 +266,7 @@ Part 2 Plenary
     * distinguish between automated workflows and human-based ('approval') workflows
     * trying to build workflow authoring tool is way too big to do in first phase of application
         * authoring outside of archivesspace, only interpretation
-    * using standard tools /standard expression languages consultans can build workflows
+    * using standard tools /standard expression languages consultants can build workflows
     * urge users to contribute workflows back to community
     * recommend toolkits/authoring tools
     * provide configuration/narratives

@@ -1,0 +1,48 @@
+PeDALS: Persistent Digital Archives and Library Systems
+-------------------------------------------------------
+
+* principal funding from ndiipp, some from mls etc
+* fundamental assumption: agencies keep some (not all) archival records in an electronic recordkeeping system
+    * may be digitized or born digital
+    * records have metadata used as access points
+* goals
+    * development of curatorial rational: define business rules/workflows; etc
+    * evaluation of lockss as basis of storage  network
+    * build community of shared practice that meets needs of wide ...
+    * remove barriers by keepinmg cost low
+    * use floss
+* majority of records in recordkeeping systems are not archival; metadata is frequently limited
+
+* workflow
+    * creation in agency of irigin
+    * description (before ingest because rules for description needed to be written)
+    * submission
+        * validation of transfer (bagit)
+        * data wrangling (prepprocessing to norm records)
+        * generate preservation metadata (NZME)
+        * accessioning
+    * AIP processing and QC
+    * ingest into LOCKSS
+    * dip processing
+    * dissemination
+        * web catalog
+        * finding aids
+
+    * see swimlane digram
+    * some archivists had trouble but it's getting better
+
+* test middleware
+    * demonstrated rules and workflow can be automated
+    * code can be reused
+        * for common records series
+        * for similar records
+    * successful normalization/enhancement of metadata
+    * testing MS BizTalk
+        * designed to work with many small XML files, not large digital objecs
+        * could not serve as integrated workflow platform
+        * handles metadata norm well
+        * coordidnates many tasks with dependency and error handling well
+    *testing locks
+        * can work with records
+        * concerns of capacity/upper limits of unix fs
+        * multiple distributed copies in lockss provides more protection from disaster
