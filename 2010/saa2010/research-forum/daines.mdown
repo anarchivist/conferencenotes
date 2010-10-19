@@ -1,0 +1,10 @@
+Reengineering Archives: Business Process Management
+---------------------------------------------------
+
+* Background: hidden collections
+* MPLP focused on processing as load on archival business process
+* BPM: holistic approach that looks at entire business process
+* Process:
+    * multiple steps/tasks
+* process mapping, modeling, statements of work, use cases
+* relationship map either graphical or in XML

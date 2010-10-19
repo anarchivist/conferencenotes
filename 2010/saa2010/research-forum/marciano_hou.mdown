@@ -1,0 +1,16 @@
+* DCAPE: Distributed Custodial Archival Preservation Environments
+    * http://salt.unc.edu/dcape/
+
+* Integrated digital preservation service
+    * OAIS-compliant/RAC working group
+    * runs on top of distributed and federated storage spaces
+
+* SIP -> virtual loading dock -> AIP -> preservation area -> DIP
+
+* developed by archivists
+* scalable, customizable/versatile
+* web-based dashboard/console
+* nhprc funded
+* built on irods
+* ISO MOIMS-RAC specification
+* rules mapped to different phases of workflow

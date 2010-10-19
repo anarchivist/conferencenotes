@@ -1,0 +1,42 @@
+* ole was last funded to get funded by mellon rit
+* kuali seemed to be large/stable enough for a good fit
+* but there are some still concerns/growing pains:
+    * mellon didn't want to fund middleware -> community funding it
+    * rice has a fairly aggressive development schedule
+* administrative organization going pretty well
+* kuali liked OLE project as it fits more with business of university than just "keeping the lights on"
+* even though kuali is talking about stuff "down the road" (e.g, sharing student data across institutions), OLE may be driving these things now
+* rice will likely save OLE a year of development time 
+    * early middleware discussions drove selection
+    * ref. http://oleproject.org/overview/ole-reference-model/
+* rice is essentially using soap calls to do ___
+    * OLE/penn/tommy looking to use apache camel
+* penn is a kuali foundation member but not yet committed to administrative systems yet
+    * OLE implementers don't need to be part of kuali foundation, but to be part of Kuali OLE governance you must be part of kuali foundation
+* rsmart affiliated with kuali: http://www.rsmart.com/
+    * hosting of shrinkwrapped version of sakai
+* '''rice is good for complex form processing''' -> workflow
+    * works well w/ soap & spring remoting 
+* rice is RAD platform plus ESB
+* potential discussion about VMs for distribution, but not necessary commitment to building them.
+    * MW suggests that this should be driven by commercial partners
+* scaling up
+    * ole has no multitenancy requirement
+* sharing data across instances/libraries
+    * not even a requirement since it's implicit in how libraries do business, but there's a rich environment for this already
+
+* roadmap
+    * design project wrapped up
+    * funding started july 1
+    * project manager (brad stiles) started july 1
+    * eight partners - each has a board member, functional council member, and technical council member
+    * funding: approx 50% mellon, 50% partnership
+    * will hire data architect, technical architect, business analysts, qa manager, configuration manager, ux designer, adminstrative coordinator
+        * architects are next critical path hires
+        * programming will be contracted out
+    * september 13: functional council meeting -> formal roadmap meeting
+        * core technology decisions will be made by them
+
+* tools
+    * rally: http://www.rallydev.com/
+    * greenhopper

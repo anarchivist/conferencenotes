@@ -1,0 +1,3 @@
+* Each doll is an activity, and each doll has a chair
+* Records mgmt advisory committee
+* make sure players at table are responsible for things.
