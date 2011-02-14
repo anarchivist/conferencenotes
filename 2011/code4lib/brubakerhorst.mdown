@@ -1,0 +1,11 @@
+Hydra Exhibit
+-------------
+* Need environment to store/enrich/publish collections data
+* Need to publish EAD finding aid and create exhibit website
+* Initial project was inquisition site
+* Limitations
+	*  separate instance for each exhibit
+
+* Configurable by query/facet
+* add scholarly significance
+* create blacklight only version of de plugin not based on fedora 

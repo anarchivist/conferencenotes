@@ -1,2 +1,7 @@
+Enhancing the Mobile Experience - Mobile Library Services at Illinois
+====================================================================
+																																	
+* http://code4lib.org/conference/2011/bishoff
 * Mobile services are not a software problem - they're an IA problem
+* GMap links can open on native app
 * 

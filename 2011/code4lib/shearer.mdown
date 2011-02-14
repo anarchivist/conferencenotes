@@ -1,0 +1,2 @@
+* GIS on the cheap
+	* Solr -> GeoJSON -> OpenLayers
