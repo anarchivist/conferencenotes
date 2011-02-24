@@ -1,0 +1,28 @@
+evan carroll
+------------
+
+* thedigitalbeyond.com
+* identity preservation
+* issues
+	* awareness
+	* access 
+	* ownership
+	* preservation
+	* countless others
+* meaning
+	* and how it is imbued onto digital objects
+	* (really context)
+* value
+	* relative, changing from person and time to time
+	* value relies on context as well 
+* how do we ease transition from creator to new curators?
+* how do we honor respect wishes of deceased?
+* how dow we maintain the personal value of a collection?
+* awareness and access
+	* not always to easy to find digital objects
+	* heirs are necessarily sophisticated technology users
+	* pda systems should provide a means of awareness and access
+* value
+	* meaning is beyond metadata - how do we passively capture meaning?
+* how do we ease transition from creator to new curators and curatorial situations and honor the wishes of the deceased?
+* metadata is often created automatically, but how to passively capture meaning in personal digital archiving systems?

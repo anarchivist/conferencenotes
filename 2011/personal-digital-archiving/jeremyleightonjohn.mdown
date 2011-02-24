@@ -1,0 +1,13 @@
+jeremy leighton john
+--------------------
+
+* 2020 vision at british library - http://www.bl.uk/2020vision #pda2011
+* eMSS lab
+	* digital forensics
+	* curatorial examination
+	* enhanced curation
+	* ancestral computing
+* recommendation of mike figgis's "digital film-making" for investigating use and adoption of new technologies for curatorial work
+* context-based piecewise hashing
+* i think JLJ's indirect point is we need better analytical tools to assist with curation of digital archival assets.
+* arguing for a postcustodial mgmt of digital archives but maintaining aggregation data & registries of hashes for authentication
