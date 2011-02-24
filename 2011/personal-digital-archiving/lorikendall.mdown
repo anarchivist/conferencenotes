@@ -1,7 +1,7 @@
 lori kendall
 ------------
 
-* document based analysis
+* document based analysis of http://en.wikipedia.org/wiki/Sokol
 * distribution as form of archiving
 * personal archiving as perosna
 * conflict between personal archiving as viewed as personal (e.g. cox and mckemmish) and as social (e.g. harris and tom nesmith) 
@@ -11,4 +11,7 @@ lori kendall
 	* women's kinswork
 * documents are created for social purposes and with respect to societal etc conventions
 * personal archiving occurs in social contexts
-* 
+* social identities
+	* relating to groups (race, gender, etc)
+	* sociotextual indentites
+	* documents as constructing, communicative process
