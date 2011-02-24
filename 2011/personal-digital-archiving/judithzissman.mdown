@@ -1,0 +1,14 @@
+judith zissman
+--------------
+
+* agile archiving
+* what does "good enough" archiving look like?
+* following the agile manifesto
+* agile archiving should value real world user stories, and prioritize individuals and interactions. example: ask @mefi questions
+* working tools
+	* keep goals in sight
+	* incremental approaches, value simplicity
+	* treasure the things that are valuable
+	* archiving complex environments is difficult: abstract vs. replicate
+* this is the best of the day, but probably not the best tool "forever." tools should work just enough
+* reminds me a lot of  the design principles behind curation microservices
