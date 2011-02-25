@@ -1,0 +1,35 @@
+evan prodromou
+--------------
+* @evanpro
+
+* archiving == "getting stuff and keeping it safe"
+* exchange == includes active use of material in multiple systems
+* open == not under control of one entity (single implementer API doesn't count
+* classes of data
+	* profile data - identity information
+		* relatively easy to recover
+	* social media - text, images, audio etc
+		* structured data
+		* polls, checkins etc
+		* similar to other arching issues 
+		* few access points and may actively discourage archiving
+	* social graph
+		* record of relationships
+	* social curation
+		* like, tag, comment, share
+* challenges
+	* winner-take-all business models
+	* consumer web
+	* api access rules
+* motivations
+	* digital civil liberties
+	* open source implementers
+	* enterpise social networks
+	* social network federation
+* technologies
+	* foaf
+	* sioc
+	* opendd
+	* html
+	* activitystreams
+* recommendations - produce activitystreams and consume as and rss and atom

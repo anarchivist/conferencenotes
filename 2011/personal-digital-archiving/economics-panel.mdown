@@ -1,0 +1,16 @@
+economics panel
+---------------
+
+* brewster kahle
+* jeff ubois
+* steve griffin
+* david rosenthal
+
+* endowed preservation as strong possibility
+* d.h. rosenthal: endowment benefits digital curation, especially for mandated preservation e.g. NSF data management plans
+* d.h. rosenthal: to endow S3 4-nines service in perpetuity: $4.7K/TB; for S3 11-nines service: $7K/TB
+* I seriously want to see storage and curation costs follow an endowment model, even in a small-scale project.
+* brewster kahle: tape robot-based storage  is completely unacceptable to web users. expectations keep going up. 
+* brewster kahle: costs, perception of rights issues, and therapy ("being ready to put things online") are major barriers in getting things online
+* 10 cents per page is approximately $30/book. relatively inexpensive, and potentially cheaper than repurchasing ebooks. #pda2011
+* internet archive now has prototype scanning center for LP. approximately $10/disc to scan visual materials and digitize audio. #pda2011

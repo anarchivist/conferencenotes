@@ -1,0 +1,7 @@
+jay datema
+----------
+* rss/atom as lowest common denomiator
+* media commons as information space
+* valet 
+* openscholar
+* archive.txt/humans.txt

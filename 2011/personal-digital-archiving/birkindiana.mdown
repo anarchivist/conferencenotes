@@ -1,0 +1,25 @@
+birkin diana
+------------
+
+* "enriching the digital junk drawer"
+	* fitting brown digital repository to personal archiving context
+* personal uploading feature built
+	* intended usage
+		* personal importance and academically relevant
+	* concerns
+		* "dreck"
+		* unknown material
+* if given useful too,s then users are more likely to contribute useful materials
+* quality metadata is essential for goals of project
+	* how to get it? background processes (data mining)
+	* required: title and tag
+	* users will spend nano-blocks of time organizing describing materials if they see utility
+		* mechanism
+		* occasional single question that takes < 5 secs to answer
+		* types: information about item, about importance of item, and relationships between diana
+* real time benefit display
+	* better navigation
+	* improved utility-assessment
+	* more relevant scholarly-resources
+* evaluation - thumbs up/down/go away
+* 
