@@ -1,0 +1,17 @@
+cal lee
+-------
+
+* forensication of archives
+	* recover data when laters of tech fail
+	* capture evidence from places that are not immediately visible
+	* ensure actions dont' make irreversable changes
+	* attend to order of volatility
+	* document what we do so others might know what has changed
+* two streams
+	* collecting institutions are getting removable media and need to accession platform and networked media
+	* digital forensics as a field provides tools and methodology but they don't necessarily fit our needs
+* bit curator
+	* modular software environment for batch processes
+	* context
+		* collecting institutions already generating to forensic medias
+		* those which are just getting started
