@@ -1,0 +1,9 @@
+cathal gurrin and aiden doherty
+-------------------------------
+
+* cognitively motivated lifelog software
+* wearable sensors - sensecam (now Vicon Revue); adds gps and bluetooth; takes 5.5K photos/day 
+*  sensors also include smartphone app. sensor data includes data from accelerometers, light, etc.
+*  visuals are powerful memory cues
+*  organization is key
+*  

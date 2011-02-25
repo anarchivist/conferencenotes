@@ -1,0 +1,15 @@
+jason zalinger
+--------------
+
+* gmail as a storywolrd
+* everyone is a curator/storyteller
+* we are good at capturing personal data, but not good at making sense of it.
+* IMPORTANT - whe gmail changes UI, it changes the storyworld
+* explore unexpected patterns
+* 6 indepth interviews (3 m 3 f); 3 via audio 3 via IM
+* asked them first about archives then began to ask more specific questions about stories or their stories contained in their archives.
+* label named forget: "all the stuff i'm supposed to forget but can't anyway - stuff i didn't want to think about but decided i needed to archive anyway"
+	* forget and remember as solution (ui based)
+* digital regret - ability to take back email
+* http://rpi.academia.edu/JasonZalinger/Papers/289682/Storyfox_A_conceptual_design_for_self-reflective_storytelling
+* http://gmailadventures.blogspot.com
