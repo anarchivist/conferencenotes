@@ -1,0 +1,9 @@
+devin becker and collier nogues
+-------------------------------
+
+* control s is poor archival practice
+	* zadie smith alarm - lack of versioning
+* mostly poets responded
+* 53% percent claimed to save over previous versions
+* file management hugest problem (too many copies, lack of versioning
+* wondering if emerging writers would be able to address problems using simplified interface over distributed version control eg git
