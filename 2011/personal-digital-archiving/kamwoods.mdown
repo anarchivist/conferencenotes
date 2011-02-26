@@ -1,0 +1,22 @@
+kam woods
+---------
+
+* archival applications of digital forensics tools and techniques
+* forensics
+	* case files to store/consolidate data
+	* exploit private data to support prosecution
+	* secure/unchanging stoage of digital evidence
+	* chain of custody
+* archives increasingly have to deal w/ ingest of heterogeneous materials - need way to mitigate risk
+* knowing what you're given / knowing what you have 
+* establishing ground truth
+	* residual and system data
+	* deleted files
+	* slack space
+	* cached data
+	* pagefiles/virtual meory/hibernation files
+	* registry
+	* system/device logs
+* private and sensitive data (and metadata)
+* advanced forensic format
+* bulk_extractor
