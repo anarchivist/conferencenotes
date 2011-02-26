@@ -6,5 +6,4 @@ sam meister
 * records of startups are messy; often no formal records management guidelines.
 * privacy is the major issue.
 * issues of regulation in 
-* preserving personal data
-* 
+* preserving personal data in context of organizational records?
