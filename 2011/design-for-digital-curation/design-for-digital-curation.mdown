@@ -1,0 +1,112 @@
+design for digital curation
+===========================
+
+* initial discussion
+	* computer network
+		* private network or public network?
+		* sensitivity of donor
+		* VPN for access
+		* difference from paper?
+		* ease of discovery
+	* appraisal
+		* degree of processing
+
+* jeremy leighton john presentation
+	* digital lives as strategic project
+		* public and organizational engagement
+		* skills
+		* content & access
+		* professional interaction 
+		* .
+	* personal digital mss project/eMSS
+		* inc. wendy cope; harold pinter
+		* initial explorations
+			* video walks/interviews
+			* panorama photographs
+			* landscape/people photography
+			* oral history
+		* aspects
+			* register
+			* inventory on receipt/intake
+			* eMSS processing
+			* fast digitization
+			* enhanced curation
+			* independent sources
+			* community participation
+			* adaptive information management
+			* digital preservation
+			* transfer/ingest
+			* advanced access & resource discovery
+			* integration
+			* guidelines
+			* research
+			* extraordinary requests - outside entities
+			* people, places, contexts, identifiers
+		* time & process
+			* digital objects curatorial system steps 
+		* key component
+			* digital replicates (export)
+			* digital elements (formation (inc expanding compound files))
+			* digital facisimiles 
+		* digital capture database - prototype filemaker application 
+		* personal vs curatorial digital objects and media
+			* appraisal decision whether to keep original media
+		* appropriate scale for recording metadata in this form?
+
+* paul wheatley presentation - @prwheatley - paul.wheatley@bl.uk
+	* digital preservation manager,BL
+	* three main areas of digpres work atBL
+		* enhance ability to perform digital preservation (collab projects like planets, SCAPE, POCOS)
+		* address root causes of digpres issues atBL
+		* manage and preserveBL collections
+	* key activities
+		* digital asset register - ~200 entries; where it is/what it is/who's responsible
+		* data stabilization (moving off removable media to secure storage)
+		* permanent access activity - risk assessment/content checking
+		* SCAPE: EU 3.5 yr project; mostly focused onscale/complexity
+		* AQUA
+	* QA work is essential; things go wrong
+		* content arrives in imperfect condition
+		* moving, processing, unpacking, repacking, generating md
+		* errors (human/software), full disks, etc
+	* solutions
+		* checksums/verifiable manifests
+			* not always used
+			* legacy content doesnt always have them
+			* situation improving significant
+			* less helpful when content is processed/migrate/dcurated
+		* manual QA
+			* fallible
+			* does not scale
+			* costly
+		* automating QA (under dev)
+			* enable timely checking of content on acquisition
+			* verify condition at "change points"
+			* check condition following deposit in digital library system
+			* analytics during process
+			* goes beyond format characterization/validation - TIFF with bitrot can still be a valid TIFF
+	* AQuA: automating quality assurance project
+		* http://wiki.opf-labs.org/display/AQuA 
+		* 6 month JIS project between York & Leeds Unis,BL, and OPF
+		* apply existing software tools to variety of digpres issues and QA problems
+		* 2 3-day mashup/hackathon events
+		* collection owners bring content, techies bring scripting/hacking skills - "speed dating"
+		* define and articulate preservation issues
+		* hack and mash - develop QA solutions
+		* wrap-up/evaluate results
+		* initial prototypes:
+			* fingerprinting techniques to id duplicate/similar files
+			* crosschecking content and metadata
+			* validation of format migration using OCR comparison
+			* deep validation of PDFs re: fonts
+* sven laqua & angela sasse
+	* sensemaking UIs for digital archivists
+	* focus-metaphor interfaces - know dis
+	* motivation: information overload; insufficient search
+	* goals: better, different information experience
+		* personal, task-centric UI
+		* automated, proactive search
+		* support for information discovery and exploration
+	* focus-metaphor prortype demonstrated lower task completion time and error rate
+	* initial search results display -> item view with related items surrounding
+	* allows you to specify whether you've viewed things or not 
