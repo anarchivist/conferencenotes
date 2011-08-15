@@ -1,0 +1,38 @@
+Building Capacity for Treating Disk Images as First-Class Objects
+=================================================================
+
+* cal
+* eomeara
+* cmumma
+* pvg
+* don post
+* pchan3
+* chickmarkley
+* richard maita
+* kamwoods
+
+* technical options for curation over time
+	* periodic capture
+	* keep audit trail of changes over time
+	* cf. web (ia vs wikipedia)
+* forensic techniques can suppot curation attentive to snapshots and audit trail data
+* metadata/packaging
+	* distribution paths: woods/lee/garfinkel paper
+* extracting/preserving information from images or evidence files
+	* xiraf - alink 2006
+	* advanced forensic format
+	* forensic tools provide various types of support for export
+* access to data from disk image
+	* provide access to image
+	* extract portions
+	* access to portions of image by generating them on request (woods and brown archiving 2009 paper)
+* example of walking disk images http://svp.soic.indiana.edu/svp/4909070
+* profession and ethical consideration
+	* when and how to really delete data
+	* responsibility of dealing with "hidden" data
+*  potentially useful inferences that could be wrong
+	*  name embeded in word file is document's authro
+	* ip address identifies indivual
+	* common md5 values indicate sharing of files across locations
+* preservation of forensic images - includes interoperability
+* risk of loss through inability to interpret filesystems is lower than risk of loss of context

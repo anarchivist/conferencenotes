@@ -46,8 +46,8 @@ design for digital curation
 			* digital objects curatorial system steps 
 		* key component
 			* digital replicates (export)
-			* digital elements (formation (inc expanding compound files))
-			* digital facisimiles 
+			* digital elements (formation including expanding compound files)
+			* digital facsimiles 
 		* digital capture database - prototype filemaker application 
 		* personal vs curatorial digital objects and media
 			* appraisal decision whether to keep original media
@@ -63,18 +63,18 @@ design for digital curation
 		* digital asset register - ~200 entries; where it is/what it is/who's responsible
 		* data stabilization (moving off removable media to secure storage)
 		* permanent access activity - risk assessment/content checking
-		* SCAPE: EU 3.5 yr project; mostly focused onscale/complexity
+		* SCAPE: EU 3.5 year project; mostly focused on scale/complexity
 		* AQUA
 	* QA work is essential; things go wrong
 		* content arrives in imperfect condition
-		* moving, processing, unpacking, repacking, generating md
+		* moving, processing, unpacking, repacking, generating metadata
 		* errors (human/software), full disks, etc
 	* solutions
 		* checksums/verifiable manifests
 			* not always used
-			* legacy content doesnt always have them
+			* legacy content doesn't always have them
 			* situation improving significant
-			* less helpful when content is processed/migrate/dcurated
+			* less helpful when content is processed/migrated/curated
 		* manual QA
 			* fallible
 			* does not scale
@@ -107,6 +107,9 @@ design for digital curation
 		* personal, task-centric UI
 		* automated, proactive search
 		* support for information discovery and exploration
-	* focus-metaphor prortype demonstrated lower task completion time and error rate
+	* focus-metaphor prototype demonstrated lower task completion time and error rate
 	* initial search results display -> item view with related items surrounding
 	* allows you to specify whether you've viewed things or not 
+* sharing documentation, etc.?
+	* OPF wiki? (would allow way to plug into preservation community)
+	* hackathon
