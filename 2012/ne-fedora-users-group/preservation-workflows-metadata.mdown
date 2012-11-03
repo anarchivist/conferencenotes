@@ -1,0 +1,13 @@
+preservation workflow and metadata
+----------------------------------
+
+* tufts
+	* tracking preaccessioning, accessioning, stabilization
+	* assign accession number, accession under a particular policy
+* upei
+	* use fedora to generate premis records
+	* audit trail
+	* potential option: collection object to represent accession; individual files as file objects
+* uconn
+	* microservice model -> how to translate extraction processes into fedora's model?
+* there's a lot of friction with digital workflow

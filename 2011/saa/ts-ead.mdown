@@ -1,0 +1,50 @@
+ts-ead
+======
+
+* revision forum - tonight 5.30-8.30
+	* followed by availability of conversation
+	* keep notes on feedback
+
+* SAA standards portal
+	* includes best practices etc
+	* non-SAA standards information as well
+
+* web stuff
+	* EADRT: survey of members - implementors listing not referred to
+	* stats on LoC EAD pages?
+
+* meeting planning
+	* start discussion soon in order to prepare in advance of meeting 
+	* small manageable deadlines in the interim?
+	* where are we as a standard? are print finding aids still a reasonable goal?
+	* is tagging pro-forma?
+	* bill: digest version of comments by end of september 2011
+	* ts-ead: spend fall to hash out other revision ideas.
+	* conference call early november
+	* organization
+		* easy stuff always moves quickly - move to conference calls?
+	* dialog with sdt critical at this point
+	* open issues:
+		* backward compatibility
+	* deprecation from v1 means removal in v3
+	* technical options
+		* broader approach w/ constrained profile
+
+* how do we assess installed base?
+	* consortial data
+
+* tag library/editorial team meeting
+
+* further feedback?
+	* based on bill's synthesis?
+
+* principles
+	* migration pathway?
+		* qualify against norms of tag use
+		* path or tool *FOR DATA*
+	* interoperability in standardized way [for METS, etc.]
+		* linking/relation elements?
+	* "simplifying"
+	* privileging data elements over print-display
+	* avoiding ambiguity
+	* 

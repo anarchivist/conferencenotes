@@ -1,0 +1,83 @@
+naac meeting
+============
+
+* regional eac-cpf workshop series
+* snac
+* library authority control is almost exclusively about control of names of bibliographic entities
+* archival auth focuses on context 
+* cheshire used by ucb as part of reconciliation process
+
+Business requirements
+---------------------
+
+* where does it reside?
+	* government institution or otherwise?
+	* independent non profit?
+* what staffing does it need?
+	* administrative expertise
+	* technical expertise
+	* community/PR
+	* how many of each
+	* editorial oversight
+	* traning
+* funding
+	* startup vs. ongoing operation
+	* public or private or mix?
+	* community supported (eg membership dues) in whole/part?
+
+Governance requirements
+-----------------------
+
+* community governance of policy/procedure?
+	* who can participate
+	* who should be represented?
+		* participating federal agencies
+		* consortia
+		* academic, state, research, historical societies and business archives, libraries, museums, and keeper of sites and monuments?
+		* policy and procedure combined or separate?
+	* relation w/ allied communities?
+		* library - naco/lcnaf/viaf
+		* museum - ulan
+		* humanists
+		* academic and resaarch communities
+	* community oversight of business ops?
+	* community oversight technical development and refinement?
+	* community building?
+
+Technological requirements
+--------------------------
+
+* Maintenance component
+	* authentication
+	* CRUD
+	* update needs to include
+* end-user component
+	* search, browse, navigate individual descriptions?
+	* search, browse, navigate social-professional networks?
+		* graphical display?
+	* timeline/map rendering of bioghists data?
+	* graphical display and navigation of organizational hierarchies?
+	* graphical display and navigation of organizational change?
+	* navigation to finding aids? bib records? museum objects? related web resources?
+	* linked open data?
+	* context widgets for systems of participating archival description
+* crowd-sourcing
+	* assist in disambiguating identities, evidence and observation?
+	* assist in interrelating CPFs?
+	* assist in relating CPFs to web resources?
+* hardware?
+* technologies?
+	* xml?
+		* maintenance (xforms?)
+	* database
+	* graph
+* standards
+	* persistent identifiers
+	* eac-cpf
+	* ead
+	* mods?
+	* gis?
+* relations with others
+	* naco/lcnaf
+	* viaf
+	* dig hum

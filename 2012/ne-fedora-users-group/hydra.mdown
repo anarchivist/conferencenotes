@@ -1,0 +1,8 @@
+hydra
+-----
+
+* tufts
+	* migrating from homegrown java-based frontend system
+	* wanting to rebuild responsive ui; looked at using bootstrap but abandoned for time
+	* dca is only library at tufts that has had capacity to do this work
+	* 

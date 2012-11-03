@@ -1,0 +1,6 @@
+Common architecture for preserving/curating: 1) Faculty IR content 2) Born dig. special collections 3) Locally-digitized content
+================================================================================================================================
+
+* who is responsible with different kinds of ingest?
+* ucsd swimlane approach: AULs review anything going in
+* 

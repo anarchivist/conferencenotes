@@ -1,0 +1,7 @@
+archivematica
+=============
+
+* how can they add more functionality and meet requirements?
+* filesystem-oriented
+* "pre ingest" became "transfer"
+* ubc - dspace/contentDM integration

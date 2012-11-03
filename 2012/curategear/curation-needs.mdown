@@ -1,0 +1,16 @@
+Curation Needs and Behaviors
+============================
+
+* carolyn hank - blog archiving by blog authors
+	* bloggers interested in saving their content for indefinite future
+	* tendency to use suite of tools
+	* use export services, manual dumps, store lots of copies
+	* will save drafts, email messages of text related to blog posts; xml
+	* bloggers concerned about performance of blog - ability to navigate through content and links through time
+
+* matt kirschenbaum - track changes
+
+* doug reside
+	* "curator" use ambig
+	* curation: acquire/exhibit dual sense
+	* 

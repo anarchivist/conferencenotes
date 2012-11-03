@@ -1,0 +1,4 @@
+versioning
+==========
+
+* with git each AIP becomes its own repository 
