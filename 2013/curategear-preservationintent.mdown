@@ -1,0 +1,23 @@
+Dave Pearson: Preservation Intent Statements at NLA
+===================================================
+
+* http://www.nla.gov.au/content/broad-directions-for-preserving-the-library-s-digital-collections
+* ~1 PB data in ~10 collection types
+* Different policies across different types of collection:
+    * Asian collections
+    * Australian boks and
+    * Dance
+    * Manuscripts
+    * Maps
+    * Music
+    * Newspaper Digitization
+    * Oral History
+    * Pictures
+    * Selective Web Harvesting
+    * Web Domain Harvesting
+* Assumed stakeholders (ie collections/curatorial units) knew language of digital preservation
+* found out that this was quickly not true and needed more detailed discussion
+* allowed preservation unit to get a perspective of what actually was in the collections
+* preservation intent statements range in complexity
+* in some cases items need to be identified different within a specific collection
+* intent is the bar, not the requirement necessarily

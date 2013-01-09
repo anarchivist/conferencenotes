@@ -1,0 +1,98 @@
+Topic Modeling for Humanities Research
+======================================
+
+http://pinboard.in/u:anarchivist/t:dhtopic
+
+Matthew Jockers, Thematic change & Authorial innovation in the 19th century
+---------------------------------------------------------------------------
+
+* http://matthewjockers.net/
+* Canonizer (2003-2004) - comparative concordancing
+* Comparison of George Eliot vs. male/female authors
+* Tried to apply latent semantic analysis, found it overly complex
+* Discovered latent Dirichlet allocation
+* Choosing area of intention is OK in terms using topic modeling
+* Notion of "topic" problematic in some discourses of humanities
+
+Robert K. Nelson, analyziing nationalism
+----------------------------------------
+
+* using corpus of 19th c. newspapers
+
+jordan boyd-graber
+------------------
+
+* topic models have ill-defined intrinsic evaluation and are willfully ignorant of meaning of words 
+* adding "human touch" to topic modeling 
+* evaluating topic models in CS research ignores what models were underneath
+* hypothesis for crowdsourced evaluation: users should be able to find "intruder topic" if topics are modeled consistently
+* use of wordnet for context-bound meaning analysis
+
+jo guldi
+--------
+
+* tendency to organize and classify is essential for sense making of 20th century information
+
+david mimno
+-----------
+
+* training topic models
+    * goal is to take a huge pile of documents into a set of topics
+    * words are assigned to topics as annotations
+    * summarization of annotations - sort on word counts ofa given word within each topic
+    * algorithm
+        * initialize topic assignnments randomly
+        * foreach iteration
+            * foreach document
+                * foreach word:
+                    * resample topic for word given all other words and their current topic assignments
+                        * look at other words in topic
+                        * product of how much document likes the topic and how much topic likes the word
+                        * each time you assign a word it's more likely to be assigned to that topic
+        * prepare reports
+* modeling
+    * things to think about:
+        * what is a document?
+            * can segment groupings of texts as such
+        * which words are interesting?
+            * stoplisting / vocabulary curation
+        * what is a word?
+            * can use multiword terms can make a different
+        * knobs:
+            * number of topics
+            * hyper-parameters:
+                * smoothing constant
+                * learn or fix?
+                    * fixed
+                        * pro: all topics similar size ; quality
+                        * con: duplicated topics; frequent words repeated
+                    * learned
+                        * pro: some topics big; others smal
+                        * con: small topics may be low quality
+* diagnostics
+    * what makes topics bad?
+        * random/unrelated words
+        * one or two intruder words
+        * boring, overly general words
+        * two or more good topics combined, sometimes with a general word in common
+    * evaluation of topic models
+        * topic size: fewer topics usually means its of lower quality
+        * within document rank
+            * for every doc rank topics by frequence
+            * in what proportion of docs is a topic the most prominent?
+            * general topics: small proportion of many documents
+            * focused topics: large proportion of few documents
+        * co-doc coherence
+
+david blei, probabilistic topic modeling
+----------------------------------------
+
+* LDA trades off two goals
+    * for each document, allocate words to as few toipcs as possible
+    * for each topic assign high probablity to as few terms as possible
+* these goals are at odds
+    * putting a document in a single topic has make #2 hard ; all of its words must have probability under that topic
+    * putting very few words in each topic makes #1 hard: to cover a doc's words, it must asmassing many topics to it.
+* trading off goals finds goroups of tightly co-occuring words
+* a topic is a recurring pattern of co-occuring words
+* LDA models can be chained together over time - not same as running model for each year
